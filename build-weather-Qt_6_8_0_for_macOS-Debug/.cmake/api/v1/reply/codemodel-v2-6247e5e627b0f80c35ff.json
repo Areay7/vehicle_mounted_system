@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-089096476c974ae9f91d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MainProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "weather::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-weather-Debug-9f7e13a833a308660332.json",
+					"name" : "weather",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "weather_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-weather_autogen-Debug-1b5f393d075bdde0d70d.json",
+					"name" : "weather_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "weather_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-weather_autogen_timestamp_deps-Debug-aa969045e14b73b6fa69.json",
+					"name" : "weather_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug",
+		"source" : "/Users/areay7/QtCode/Qt_learn/cmake_test/weather"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
