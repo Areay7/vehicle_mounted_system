@@ -51,7 +51,7 @@ public:
     {
         Form->setWindowTitle(QCoreApplication::translate("Form", "Form", nullptr));
         btnOpenWeatherWindow->setText(QCoreApplication::translate("Form", "\345\244\251\346\260\224", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Form", "\347\212\266\346\200\201", nullptr));
         pushButton_3->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
         pushButton_4->setText(QCoreApplication::translate("Form", "PushButton", nullptr));
     } // retranslateUi

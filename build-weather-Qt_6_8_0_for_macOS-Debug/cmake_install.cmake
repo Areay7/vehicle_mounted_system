@@ -38,13 +38,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/weather.app" USE_SOURCE_PERMISSIONS)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./weather.app/Contents/MacOS/weather" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./weather.app/Contents/MacOS/weather")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/MyMqttTest.app" USE_SOURCE_PERMISSIONS)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./MyMqttTest.app/Contents/MacOS/MyMqttTest" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./MyMqttTest.app/Contents/MacOS/MyMqttTest")
     execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/Users/areay7/Qt/6.8.0/macos/lib"
+      -delete_rpath "/Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib"
       -add_rpath "@executable_path/../Frameworks"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./weather.app/Contents/MacOS/weather")
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./MyMqttTest.app/Contents/MacOS/MyMqttTest")
   endif()
 endif()
 

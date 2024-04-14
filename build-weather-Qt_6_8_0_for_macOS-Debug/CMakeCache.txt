@@ -278,6 +278,15 @@ MainProject_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 MainProject_SOURCE_DIR:STATIC=/Users/areay7/QtCode/Qt_learn/cmake_test/weather
 
+//Value Computed by CMake
+My_Mqtt_Client_BINARY_DIR:STATIC=/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug
+
+//Value Computed by CMake
+My_Mqtt_Client_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+My_Mqtt_Client_SOURCE_DIR:STATIC=/Users/areay7/QtCode/Qt_learn/cmake_test/weather
+
 //Include for OpenGL on OS X
 OPENGL_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework
 
@@ -320,6 +329,9 @@ Qt6GuiTools_DIR:PATH=/Users/areay7/Qt/6.8.0/macos/lib/cmake/Qt6GuiTools
 
 //The directory containing a CMake configuration file for Qt6Gui.
 Qt6Gui_DIR:PATH=/Users/areay7/Qt/6.8.0/macos/lib/cmake/Qt6Gui
+
+//The directory containing a CMake configuration file for Qt6Mqtt.
+Qt6Mqtt_DIR:PATH=/Users/areay7/Qt/6.8.0/macos/lib/cmake/Qt6Mqtt
 
 //The directory containing a CMake configuration file for Qt6Network.
 Qt6Network_DIR:PATH=/Users/areay7/Qt/6.8.0/macos/lib/cmake/Qt6Network

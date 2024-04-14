@@ -19,6 +19,8 @@ public:
 private slots:
     void on_btnOpenWeatherWindow_clicked();
 
+    void on_btnOpenSituationWindow_clicked();
+
 private:
     Ui::Form *ui;
     MainWindow *mainWindow;

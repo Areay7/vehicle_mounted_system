@@ -893,6 +893,7 @@ weather_autogen/timestamp: \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h \
 	/Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_time.h \
 	/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
+	/Users/areay7/Qt/6.8.0/macos/include/QtMqtt/qmqttclient.h \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QDebug \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QFlags \
@@ -907,6 +908,7 @@ weather_autogen/timestamp: \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QRect \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSharedDataPointer \
+	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSharedPointer \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSize \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QString \
@@ -1100,6 +1102,7 @@ weather_autogen/timestamp: \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QNetworkRequest \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QSslConfiguration \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QSslPreSharedKeyAuthenticator \
+	/Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QTcpSocket \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qabstractsocket.h \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qhostaddress.h \
 	/Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qnetworkaccessmanager.h \
@@ -1366,6 +1369,8 @@ weather_autogen/timestamp: \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/CMakeFiles/3.26.3/CMakeSystem.cmake \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/weather_autogen/moc_predefs.h \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/CMakeLists.txt \
+	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/currentsituation.cpp \
+	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/currentsituation.h \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/main.cpp \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/main.qrc \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwidget.cpp \
@@ -1375,6 +1380,7 @@ weather_autogen/timestamp: \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/weatherdata.h \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/weathertool.cpp \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/weathertool.h \
+	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/currentsituation.ui \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwidget.ui \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwindow.ui \
 	/Applications/CMake.app/Contents/bin/cmake

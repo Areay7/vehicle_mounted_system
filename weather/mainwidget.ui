@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>车载系统</string>
   </property>
   <widget class="QPushButton" name="btnOpenWeatherWindow">
    <property name="geometry">
@@ -26,7 +26,7 @@
     <string>天气</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="btnOpenSituationWindow">
    <property name="geometry">
     <rect>
      <x>690</x>
@@ -36,7 +36,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>状态</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">

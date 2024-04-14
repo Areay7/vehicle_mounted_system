@@ -1,4 +1,5 @@
 #include "mainwidget.h"
+#include "currentsituation.h"
 #include "ui_mainwidget.h"
 
 MainWidget::MainWidget(QWidget *parent)
@@ -6,19 +7,30 @@ MainWidget::MainWidget(QWidget *parent)
     , ui(new Ui::Form)
 {
     ui->setupUi(this);
-    mainWindow = new MainWindow(this); // 初始化 mainWindow
+    mainWindow = new MainWindow(this); // 分配内存给 mainWindow 指针
 }
 
 MainWidget::~MainWidget()
 {
     delete ui;
-    delete mainWindow; // 释放 mainWindow 内存
 }
 
 void MainWidget::on_btnOpenWeatherWindow_clicked()
 {
-    mainWindow->show(); // 点击按钮打开主窗口
+    mainWindow->show(); // 显示主窗口
     hide(); // 隐藏当前窗口
 }
+
+void MainWidget::on_btnOpenSituationWindow_clicked()
+{
+    // 创建 CurrentSituation 窗口对象
+    CurrentSituation *situationWindow = new CurrentSituation(this);
+
+    // 显示 CurrentSituation 窗口
+    situationWindow->show();
+    hide(); // 隐藏当前窗口
+}
+
+
 
 
