@@ -11,12 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>车载系统</string>
+   <string>XiaoMi-SU7车载系统</string>
   </property>
   <widget class="QPushButton" name="btnOpenWeatherWindow">
    <property name="geometry">
     <rect>
-     <x>690</x>
+     <x>730</x>
      <y>110</y>
      <width>100</width>
      <height>32</height>
@@ -29,7 +29,7 @@
   <widget class="QPushButton" name="btnOpenSituationWindow">
    <property name="geometry">
     <rect>
-     <x>690</x>
+     <x>730</x>
      <y>200</y>
      <width>100</width>
      <height>32</height>
@@ -39,11 +39,24 @@
     <string>状态</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="btnOpenControlWindow">
    <property name="geometry">
     <rect>
-     <x>690</x>
+     <x>730</x>
      <y>280</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>控制</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>360</y>
      <width>100</width>
      <height>32</height>
     </rect>
@@ -52,17 +65,17 @@
     <string>PushButton</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>360</y>
-     <width>100</width>
-     <height>32</height>
+     <x>30</x>
+     <y>80</y>
+     <width>671</width>
+     <height>371</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>TextLabel</string>
    </property>
   </widget>
  </widget>

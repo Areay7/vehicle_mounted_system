@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/alarm.png</file>
+        <file>image/alarmDry.png</file>
+        <file>image/alarmHumTooltip.png</file>
+        <file>image/alarmOpen.png</file>
+        <file>image/alarmTemp.png</file>
+        <file>image/alarmTemperTooltip.png</file>
+        <file>image/BlueSwitchOFF.png</file>
+        <file>image/BlueSwitchON.png</file>
+        <file>image/cold.png</file>
+        <file>image/ColdTemperature.png</file>
+        <file>image/DoorSwitchOFF.png</file>
+        <file>image/DoorSwitchON.png</file>
+        <file>image/edotLean.png</file>
+        <file>image/hot.png</file>
+        <file>image/HumIcon.png</file>
+        <file>image/LEDSwitchOFF.png</file>
+        <file>image/LEDSwitchON.png</file>
+        <file>image/recordVoiceBack.png</file>
+        <file>image/recordVoiceBackPress.png</file>
+        <file>image/recordVoiceBackRelace.png</file>
+        <file>image/Sun.png</file>
+        <file>image/Tempcon.png</file>
+        <file>image/TemperSwitchOFF.png</file>
+        <file>image/TemperSwitchON.png</file>
+        <file>image/TempPressAdd.png</file>
+        <file>image/TempPressSub.png</file>
+        <file>image/TempSwitchAdd.png</file>
+        <file>image/TempSwitchSub.png</file>
+        <file>image/voiceback.png</file>
+        <file>image/WIFISwitchOFF.png</file>
+        <file>image/WIFISwitchON.png</file>
+        <file>wav/receiv.wav</file>
+    </qresource>
+</RCC>
