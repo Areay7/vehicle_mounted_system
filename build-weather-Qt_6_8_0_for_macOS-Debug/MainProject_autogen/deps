@@ -1400,6 +1400,8 @@ MainProject_autogen/timestamp: \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/weatherdata.h \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/weathertool.cpp \
 	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/weathertool.h \
+	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/wifilistwidget.cpp \
+	/Users/areay7/QtCode/Qt_learn/cmake_test/weather/wifilistwidget.h \
 	/Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqttauthenticationproperties.h \
 	/Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqttconnectionproperties.h \
 	/Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqttglobal.h \

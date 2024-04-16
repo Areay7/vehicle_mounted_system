@@ -105,6 +105,22 @@ build CMakeFiles/MainProject.dir/currentsituation.cpp.o: CXX_COMPILER__MainProje
   OBJECT_DIR = CMakeFiles/MainProject.dir
   OBJECT_FILE_DIR = CMakeFiles/MainProject.dir
 
+build CMakeFiles/MainProject.dir/wifilistwidget.cpp.o: CXX_COMPILER__MainProject_unscanned_Debug /Users/areay7/QtCode/Qt_learn/cmake_test/weather/wifilistwidget.cpp || cmake_object_order_depends_target_MainProject
+  DEFINES = -DPRO_FILE_PWD=\"/Users/areay7/QtCode/Qt_learn/cmake_test/weather\" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MQTT_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/MainProject.dir/wifilistwidget.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -F/Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib
+  INCLUDES = -I/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/MainProject_autogen/include -isystem /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Headers -iframework /Users/areay7/Qt/6.8.0/macos/lib -isystem /Users/areay7/Qt/6.8.0/macos/mkspecs/macx-clang -isystem /Users/areay7/Qt/6.8.0/macos/include -isystem /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Headers -isystem /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include -isystem /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt -isystem /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib/QtMqtt.framework/Headers -isystem /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Headers
+  OBJECT_DIR = CMakeFiles/MainProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/MainProject.dir
+
+build CMakeFiles/MainProject.dir/mqttlink.cpp.o: CXX_COMPILER__MainProject_unscanned_Debug /Users/areay7/QtCode/Qt_learn/cmake_test/weather/mqttlink.cpp || cmake_object_order_depends_target_MainProject
+  DEFINES = -DPRO_FILE_PWD=\"/Users/areay7/QtCode/Qt_learn/cmake_test/weather\" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MQTT_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/MainProject.dir/mqttlink.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -F/Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib
+  INCLUDES = -I/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/MainProject_autogen/include -isystem /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Headers -iframework /Users/areay7/Qt/6.8.0/macos/lib -isystem /Users/areay7/Qt/6.8.0/macos/mkspecs/macx-clang -isystem /Users/areay7/Qt/6.8.0/macos/include -isystem /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Headers -isystem /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include -isystem /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt -isystem /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib/QtMqtt.framework/Headers -isystem /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Headers
+  OBJECT_DIR = CMakeFiles/MainProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/MainProject.dir
+
 build CMakeFiles/MainProject.dir/MainProject_autogen/EWIEGA46WW/qrc_main.cpp.o: CXX_COMPILER__MainProject_unscanned_Debug /Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/MainProject_autogen/EWIEGA46WW/qrc_main.cpp || cmake_object_order_depends_target_MainProject
   DEFINES = -DPRO_FILE_PWD=\"/Users/areay7/QtCode/Qt_learn/cmake_test/weather\" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MQTT_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/MainProject.dir/MainProject_autogen/EWIEGA46WW/qrc_main.cpp.o.d
@@ -129,7 +145,7 @@ build CMakeFiles/MainProject.dir/MainProject_autogen/EWIEGA46WW/qrc_control.cpp.
 #############################################
 # Link the executable MainProject.app/Contents/MacOS/MainProject
 
-build MainProject.app/Contents/MacOS/MainProject: CXX_EXECUTABLE_LINKER__MainProject_Debug CMakeFiles/MainProject.dir/MainProject_autogen/mocs_compilation.cpp.o CMakeFiles/MainProject.dir/main.cpp.o CMakeFiles/MainProject.dir/mainwindow.cpp.o CMakeFiles/MainProject.dir/controlwidget.cpp.o CMakeFiles/MainProject.dir/weathertool.cpp.o CMakeFiles/MainProject.dir/mainwidget.cpp.o CMakeFiles/MainProject.dir/currentsituation.cpp.o CMakeFiles/MainProject.dir/MainProject_autogen/EWIEGA46WW/qrc_main.cpp.o CMakeFiles/MainProject.dir/MainProject_autogen/EWIEGA46WW/qrc_control.cpp.o | /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib/QtMqtt.framework/Versions/A/QtMqtt /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/QtNetwork /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore || MainProject_autogen MainProject_autogen_timestamp_deps
+build MainProject.app/Contents/MacOS/MainProject: CXX_EXECUTABLE_LINKER__MainProject_Debug CMakeFiles/MainProject.dir/MainProject_autogen/mocs_compilation.cpp.o CMakeFiles/MainProject.dir/main.cpp.o CMakeFiles/MainProject.dir/mainwindow.cpp.o CMakeFiles/MainProject.dir/controlwidget.cpp.o CMakeFiles/MainProject.dir/weathertool.cpp.o CMakeFiles/MainProject.dir/mainwidget.cpp.o CMakeFiles/MainProject.dir/currentsituation.cpp.o CMakeFiles/MainProject.dir/wifilistwidget.cpp.o CMakeFiles/MainProject.dir/mqttlink.cpp.o CMakeFiles/MainProject.dir/MainProject_autogen/EWIEGA46WW/qrc_main.cpp.o CMakeFiles/MainProject.dir/MainProject_autogen/EWIEGA46WW/qrc_control.cpp.o | /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib/QtMqtt.framework/Versions/A/QtMqtt /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/QtNetwork /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore || MainProject_autogen MainProject_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/areay7/Qt/6.8.0/macos/lib -Wl,-rpath,/Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib/QtMqtt.framework/Versions/A/QtMqtt  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/QtGui  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/QtNetwork  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration
   LINK_PATH = -F/Users/areay7/Qt/6.8.0/macos/lib -F/Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib
@@ -215,7 +231,7 @@ build MainProject_autogen_timestamp_deps: phony CMakeFiles/MainProject_autogen_t
 #############################################
 # Utility command for MainProject_autogen
 
-build MainProject_autogen: phony CMakeFiles/MainProject_autogen MainProject_autogen/include/ui_mainwindow.h MainProject_autogen/include/ui_mainwidget.h MainProject_autogen/include/ui_currentsituation.h MainProject_autogen/include/ui_environmentwidget.h MainProject_autogen/include/ui_controlwidget.h MainProject_autogen/timestamp MainProject_autogen/mocs_compilation.cpp MainProject_autogen_timestamp_deps
+build MainProject_autogen: phony CMakeFiles/MainProject_autogen MainProject_autogen/include/ui_mainwindow.h MainProject_autogen/include/ui_mainwidget.h MainProject_autogen/include/ui_currentsituation.h MainProject_autogen/include/ui_environmentwidget.h MainProject_autogen/include/ui_controlwidget.h MainProject_autogen/include/ui_wifilistwidget.h MainProject_autogen/timestamp MainProject_autogen/mocs_compilation.cpp MainProject_autogen_timestamp_deps
 
 
 #############################################
@@ -249,13 +265,13 @@ build MainProject_autogen/EWIEGA46WW/qrc_control.cpp | ${cmake_ninja_workdir}Mai
 #############################################
 # Phony custom command for CMakeFiles/MainProject_autogen_timestamp_deps
 
-build CMakeFiles/MainProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MainProject_autogen_timestamp_deps: phony /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib/QtMqtt.framework/Versions/A/QtMqtt /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/areay7/Qt/6.8.0/macos/./libexec/uic /Users/areay7/Qt/6.8.0/macos/./libexec/moc /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/QtNetwork
+build CMakeFiles/MainProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MainProject_autogen_timestamp_deps: phony /Users/areay7/Qt/6.8.0/macos/./libexec/moc /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/QtNetwork /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib/QtMqtt.framework/Versions/A/QtMqtt /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/areay7/Qt/6.8.0/macos/./libexec/uic
 
 
 #############################################
 # Phony custom command for CMakeFiles/MainProject_autogen
 
-build CMakeFiles/MainProject_autogen MainProject_autogen/include/ui_mainwindow.h MainProject_autogen/include/ui_mainwidget.h MainProject_autogen/include/ui_currentsituation.h MainProject_autogen/include/ui_environmentwidget.h MainProject_autogen/include/ui_controlwidget.h | ${cmake_ninja_workdir}CMakeFiles/MainProject_autogen ${cmake_ninja_workdir}MainProject_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_mainwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_currentsituation.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_environmentwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_controlwidget.h: phony MainProject_autogen/timestamp || MainProject_autogen_timestamp_deps
+build CMakeFiles/MainProject_autogen MainProject_autogen/include/ui_mainwindow.h MainProject_autogen/include/ui_mainwidget.h MainProject_autogen/include/ui_currentsituation.h MainProject_autogen/include/ui_environmentwidget.h MainProject_autogen/include/ui_controlwidget.h MainProject_autogen/include/ui_wifilistwidget.h | ${cmake_ninja_workdir}CMakeFiles/MainProject_autogen ${cmake_ninja_workdir}MainProject_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_mainwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_currentsituation.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_environmentwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_controlwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_wifilistwidget.h: phony MainProject_autogen/timestamp || MainProject_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

@@ -3,11 +3,13 @@
 #include "ui_mainwidget.h"
 #include "controlwidget.h"
 #include <QPixmap>
+#include <QDebug>
 
 MainWidget::MainWidget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Form)
 {
+
     ui->setupUi(this);
     // 使用 QIcon 加载图像文件
     QIcon icon(":/res/xiaomisu7.jpg");
@@ -17,6 +19,8 @@ MainWidget::MainWidget(QWidget *parent)
 
     // 设置图像到 QLabel
     ui->label->setPixmap(pixmap);
+
+
 
     mainWindow = new MainWindow(this); // 分配内存给 mainWindow 指针
 }
@@ -35,7 +39,7 @@ void MainWidget::on_btnOpenWeatherWindow_clicked()
 void MainWidget::on_btnOpenSituationWindow_clicked()
 {
     // 创建 CurrentSituation 窗口对象
-    CurrentSituation *situationWindow = new CurrentSituation(this);
+    CurrentSituation *situationWindow = new CurrentSituation();
 
     // 显示 CurrentSituation 窗口
     situationWindow->show();
@@ -48,9 +52,15 @@ void MainWidget::on_btnOpenSituationWindow_clicked()
 
 void MainWidget::on_btnOpenControlWindow_clicked()
 {
-    // 创建并显示 ControlWidget 窗口
-    ControlWidget *controlWidget = new ControlWidget;
+    // 创建并显示 ControlWidget 窗口，并传递 MainWidget 对象的指针
+    ControlWidget *controlWidget = new ControlWidget();
+
+
     controlWidget->show();
     hide();
 }
+
+
+
+
 

@@ -46,7 +46,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 37,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
@@ -70,13 +70,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 63,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 53,
+				"line" : 56,
 				"parent" : 0
 			},
 			{
@@ -204,7 +204,7 @@
 			{
 				"command" : 11,
 				"file" : 1,
-				"line" : 72,
+				"line" : 75,
 				"parent" : 0
 			}
 		]
@@ -332,12 +332,13 @@
 				0,
 				1,
 				2,
-				9,
 				10,
 				11,
-				14,
-				26,
-				27
+				12,
+				15,
+				16,
+				30,
+				31
 			]
 		}
 	],
@@ -463,12 +464,13 @@
 				0,
 				1,
 				2,
-				9,
 				10,
 				11,
-				14,
-				26,
-				27
+				12,
+				15,
+				16,
+				30,
+				31
 			]
 		},
 		{
@@ -480,12 +482,14 @@
 				6,
 				7,
 				8,
-				13,
-				20,
-				21,
-				22,
+				9,
+				14,
 				23,
-				24
+				24,
+				25,
+				26,
+				27,
+				28
 			]
 		},
 		{
@@ -493,22 +497,23 @@
 			"sourceIndexes" : 
 			[
 				4,
-				12,
-				15,
-				16,
+				13,
 				17,
 				18,
 				19,
-				25
+				20,
+				21,
+				22,
+				29
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				28,
-				29,
-				30
+				32,
+				33,
+				34
 			]
 		}
 	],
@@ -565,6 +570,11 @@
 		},
 		{
 			"backtrace" : 4,
+			"path" : "wifilistwidget.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "controlwidget.cpp",
 			"sourceGroupIndex" : 0
@@ -599,6 +609,12 @@
 		},
 		{
 			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "wifilistwidget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
 			"path" : "currentsituation.ui",
 			"sourceGroupIndex" : 2
 		},
@@ -610,6 +626,11 @@
 		{
 			"backtrace" : 4,
 			"path" : "controlwidget.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "wifilistwidget.ui",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -650,6 +671,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/MainProject_autogen/include/ui_controlwidget.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/MainProject_autogen/include/ui_wifilistwidget.h",
 			"sourceGroupIndex" : 1
 		},
 		{

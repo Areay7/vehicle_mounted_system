@@ -807,7 +807,7 @@ background: rgba(0,0,0,0%);</string>
      </property>
     </widget>
    </widget>
-   <widget class="QStackedWidget" name="stackedWidget_8">
+   <widget class="QStackedWidget" name="stackedWidgetSetting">
     <property name="geometry">
      <rect>
       <x>740</x>
@@ -819,7 +819,10 @@ background: rgba(0,0,0,0%);</string>
     <property name="styleSheet">
      <string notr="true">border-radius: 30px; </string>
     </property>
-    <widget class="QWidget" name="stackedWidget_8Page1" native="true">
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="pageVoice">
      <widget class="QLabel" name="label_27">
       <property name="geometry">
        <rect>
@@ -901,6 +904,7 @@ background-color: rgb(29, 43, 50);</string>
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="pageWIFI"/>
    </widget>
    <widget class="QFrame" name="verticalLayout">
     <property name="geometry">

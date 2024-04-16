@@ -54,7 +54,7 @@ public:
 
     void retranslateUi(QWidget *Form)
     {
-        Form->setWindowTitle(QCoreApplication::translate("Form", "XiaoMi-SU7\350\275\246\350\275\275\347\263\273\347\273\237", nullptr));
+        Form->setWindowTitle(QCoreApplication::translate("Form", "XIAOMI-SU7\350\275\246\350\275\275\347\263\273\347\273\237", nullptr));
         btnOpenWeatherWindow->setText(QCoreApplication::translate("Form", "\345\244\251\346\260\224", nullptr));
         btnOpenSituationWindow->setText(QCoreApplication::translate("Form", "\347\212\266\346\200\201", nullptr));
         btnOpenControlWindow->setText(QCoreApplication::translate("Form", "\346\216\247\345\210\266", nullptr));

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>XiaoMi-SU7车载系统</string>
+   <string>XIAOMI-SU7车载系统</string>
   </property>
   <widget class="QPushButton" name="btnOpenWeatherWindow">
    <property name="geometry">

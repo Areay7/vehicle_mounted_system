@@ -20,15 +20,19 @@ set(PROJECT_SOURCES
     weatherdata.h
     weathertool.h
     mainwidget.h
+    wifilistwidget.h
     controlwidget.cpp
     weathertool.cpp
     mainwidget.cpp
     mainwidget.ui
     currentsituation.h
     currentsituation.cpp
+    wifilistwidget.cpp
+    mqttlink.cpp
     currentsituation.ui
     environmentwidget.ui
     controlwidget.ui
+    wifilistwidget.ui
     main.qrc
     control.qrc
 )

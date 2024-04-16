@@ -23,6 +23,9 @@ private slots:
 
     void on_btnOpenControlWindow_clicked();
 
+
+
+
 private:
     Ui::Form *ui;
     MainWindow *mainWindow;

@@ -65,12 +65,13 @@ public:
     QWidget *widgetWIFI;
     QLabel *labWIFIText;
     QPushButton *pushButtonSetWIFI;
-    QStackedWidget *stackedWidget_8;
-    QWidget *stackedWidget_8Page1;
+    QStackedWidget *stackedWidgetSetting;
+    QWidget *pageVoice;
     QLabel *label_27;
     QLabel *label_28;
     QPushButton *pushButtonEdit;
     QTextEdit *textEdit;
+    QWidget *pageWIFI;
     QFrame *verticalLayout;
     QFrame *line;
     QLabel *label;
@@ -381,18 +382,18 @@ public:
         pushButtonSetWIFI->setStyleSheet(QString::fromUtf8("border-radius:28px; \n"
 "border-image: url(:/image/WIFISwitchOFF.png);\n"
 "background: rgba(0,0,0,0%);"));
-        stackedWidget_8 = new QStackedWidget(frame);
-        stackedWidget_8->setObjectName("stackedWidget_8");
-        stackedWidget_8->setGeometry(QRect(740, 10, 241, 471));
-        stackedWidget_8->setStyleSheet(QString::fromUtf8("border-radius: 30px; "));
-        stackedWidget_8Page1 = new QWidget();
-        stackedWidget_8Page1->setObjectName("stackedWidget_8Page1");
-        label_27 = new QLabel(stackedWidget_8Page1);
+        stackedWidgetSetting = new QStackedWidget(frame);
+        stackedWidgetSetting->setObjectName("stackedWidgetSetting");
+        stackedWidgetSetting->setGeometry(QRect(740, 10, 241, 471));
+        stackedWidgetSetting->setStyleSheet(QString::fromUtf8("border-radius: 30px; "));
+        pageVoice = new QWidget();
+        pageVoice->setObjectName("pageVoice");
+        label_27 = new QLabel(pageVoice);
         label_27->setObjectName("label_27");
         label_27->setGeometry(QRect(20, 50, 201, 111));
         label_27->setStyleSheet(QString::fromUtf8("border-image: url(:/image/voiceback.png);\n"
 "background: rgba(0,0,0,0%);"));
-        label_28 = new QLabel(stackedWidget_8Page1);
+        label_28 = new QLabel(pageVoice);
         label_28->setObjectName("label_28");
         label_28->setGeometry(QRect(67, 195, 151, 31));
         QFont font4;
@@ -403,17 +404,20 @@ public:
 "background-color: rgb(73, 92, 105);"));
         label_28->setScaledContents(false);
         label_28->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
-        pushButtonEdit = new QPushButton(stackedWidget_8Page1);
+        pushButtonEdit = new QPushButton(pageVoice);
         pushButtonEdit->setObjectName("pushButtonEdit");
         pushButtonEdit->setGeometry(QRect(20, 200, 31, 31));
         pushButtonEdit->setStyleSheet(QString::fromUtf8("background: rgba(0,0,0,0%);\n"
 "border-image: url(:/image/edotLean.png);"));
-        textEdit = new QTextEdit(stackedWidget_8Page1);
+        textEdit = new QTextEdit(pageVoice);
         textEdit->setObjectName("textEdit");
         textEdit->setGeometry(QRect(10, 240, 231, 231));
         textEdit->setStyleSheet(QString::fromUtf8("color:#EAF3F4;\n"
 "background-color: rgb(29, 43, 50);"));
-        stackedWidget_8->addWidget(stackedWidget_8Page1);
+        stackedWidgetSetting->addWidget(pageVoice);
+        pageWIFI = new QWidget();
+        pageWIFI->setObjectName("pageWIFI");
+        stackedWidgetSetting->addWidget(pageWIFI);
         verticalLayout = new QFrame(frame);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setGeometry(QRect(0, 0, 721, 111));
@@ -452,6 +456,9 @@ public:
 "background: rgba(0,0,0,0%);"));
 
         retranslateUi(ControlWidget);
+
+        stackedWidgetSetting->setCurrentIndex(0);
+
 
         QMetaObject::connectSlotsByName(ControlWidget);
     } // setupUi

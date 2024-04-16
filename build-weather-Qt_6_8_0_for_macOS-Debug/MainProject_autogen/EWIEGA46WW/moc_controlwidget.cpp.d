@@ -338,6 +338,22 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__exception/operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__exception/terminate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/buffer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__format/enable_insertable.h \
@@ -698,6 +714,7 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/array \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bit \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/cerrno \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/chrono \
@@ -719,10 +736,13 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/execution \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iosfwd \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iterator \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/limits.h \
@@ -736,6 +756,7 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/new \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/optional \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ratio \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdbool.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stddef.h \
@@ -841,6 +862,25 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QDebug \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QFlags \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QIODevice \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QJsonArray \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QJsonDocument \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QJsonObject \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QJsonValue \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QList \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QMap \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QMetaType \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QRect \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSharedDataPointer \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSize \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QString \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QUrl \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QVariant \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
@@ -859,6 +899,9 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearraylist.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcalendar.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcborcommon.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcborvalue.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qchar.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcompare.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h \
@@ -870,11 +913,21 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontainerinfo.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontainertools_impl.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcoreapplication.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcoreapplication_platform.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcoreevent.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qcryptographichash.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qdatetime.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qdeadlinetimer.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qelapsedtimer.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qendian.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qeventloop.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qfile.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qfiledevice.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qflags.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qfloat16.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qforeach.h \
@@ -885,21 +938,29 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qhash.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qjsonarray.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qjsondocument.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qjsonobject.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qjsonvalue.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qlatin1stringview.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qline.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qlocale.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qlogging.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qmalloc.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qmap.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qmargins.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qmath.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qmetacontainer.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qmetaobject.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qmetatype.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qminmax.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qnamespace.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qnativeinterface.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qnumeric.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qobject.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qobject_impl.h \
@@ -911,6 +972,7 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qregularexpression.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qset.h \
@@ -952,40 +1014,92 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtversionchecks.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtypes.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qurl.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/quuid.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/QContextMenuEvent \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/QPainter \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/QTransform \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qaction.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qcolor.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qcursor.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qevent.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qeventpoint.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qfont.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qfontinfo.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qfontmetrics.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qguiapplication.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qguiapplication_platform.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qicon.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qiconconstants_impl.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qimage.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qinputdevice.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qinputmethod.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpainter.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpointingdevice.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpolygon.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qscreen.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qscreen_platform.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qtextoption.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qvector2d.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QNetworkAccessManager \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QNetworkReply \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QNetworkRequest \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QSslConfiguration \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QSslPreSharedKeyAuthenticator \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qabstractsocket.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qhostaddress.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qnetworkaccessmanager.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qnetworkreply.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qnetworkrequest.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qssl.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qsslcertificate.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qsslconfiguration.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qsslerror.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qsslpresharedkeyauthenticator.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qsslsocket.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qtcpsocket.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qtnetwork-config.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkexports.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkglobal.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMenu \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMessageBox \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qdialog.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qdialogbuttonbox.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmenu.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmessagebox.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
-  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h \
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwidget.h \
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwindow.h \
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/weatherdata.h \
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/weathertool.h
