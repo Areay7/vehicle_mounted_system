@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Ellipse 2.png</file>
+        <file>Group 2.1.png</file>
+        <file>Group 3.1.png</file>
+        <file>Group.png</file>
+        <file>Union（1）.png</file>
+        <file>Union.png</file>
+        <file>Vector.png</file>
+        <file>quietVolume.png</file>
+        <file>Volume.png</file>
+        <file>CD.png</file>
+        <file>back2.jpg</file>
+        <file>一路向北.jpg</file>
+        <file>CDx.png</file>
+        <file>list.png</file>
+        <file>loading.png</file>
+        <file>setback.png</file>
+        <file>setbackhover.png</file>
+        <file>loadinghover.png</file>
+        <file>button/nexthover.png</file>
+        <file>button/prohover.png</file>
+        <file>button/hover.png</file>
+        <file>back6.png</file>
+    </qresource>
+</RCC>

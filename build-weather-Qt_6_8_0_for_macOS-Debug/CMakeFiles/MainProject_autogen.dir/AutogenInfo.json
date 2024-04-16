@@ -348,7 +348,9 @@
 		"/Users/areay7/Qt/6.8.0/macos/lib/cmake/Qt6Mqtt/Qt6MqttVersionlessTargets.cmake",
 		"/Users/areay7/Qt/6.8.0/macos/lib/cmake/Qt6/macos/Info.plist.app.in",
 		"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/main.qrc",
-		"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/control.qrc"
+		"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/control.qrc",
+		"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainpage.qrc",
+		"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/musicPlayer/musicPlayer.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/areay7/QtCode/Qt_learn/cmake_test/weather",
 	"DEP_FILE" : "/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_8_0_for_macOS-Debug/MainProject_autogen/deps",
@@ -368,6 +370,12 @@
 			null
 		],
 		[
+			"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/http.h",
+			"MU",
+			"EWIEGA46WW/moc_http.cpp",
+			null
+		],
+		[
 			"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwidget.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwidget.cpp",
@@ -377,6 +385,18 @@
 			"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/mqttlink.h",
+			"MU",
+			"EWIEGA46WW/moc_mqttlink.cpp",
+			null
+		],
+		[
+			"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/sysdatatype.h",
+			"MU",
+			"EWIEGA46WW/moc_sysdatatype.cpp",
 			null
 		],
 		[
@@ -476,6 +496,11 @@
 		],
 		[
 			"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/currentsituation.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/areay7/QtCode/Qt_learn/cmake_test/weather/http.cpp",
 			"MU",
 			null
 		],

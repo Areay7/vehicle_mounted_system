@@ -26,6 +26,10 @@ set(PROJECT_SOURCES
     mainwidget.cpp
     mainwidget.ui
     currentsituation.h
+    mqttlink.h
+    sysdatatype.h
+    http.h
+    http.cpp
     currentsituation.cpp
     wifilistwidget.cpp
     mqttlink.cpp
@@ -35,6 +39,8 @@ set(PROJECT_SOURCES
     wifilistwidget.ui
     main.qrc
     control.qrc
+    mainpage.qrc
+    musicPlayer//musicPlayer.qrc
 )
 
 if(Qt6_FOUND)

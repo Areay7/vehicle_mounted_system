@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/back2.jpg</file>
+        <file>image/back3.jpg</file>
+        <file>image/back4.png</file>
+        <file>image/back5.png</file>
+        <file>image/back6.png</file>
+        <file>image/back7.png</file>
+        <file>image/back8.png</file>
+        <file>image/CD.png</file>
+        <file>image/CDx.png</file>
+        <file>image/Ellipse 2.png</file>
+        <file>image/Group 2.1.png</file>
+        <file>image/Group 3.1.png</file>
+        <file>image/Group.png</file>
+        <file>image/image.qrc</file>
+        <file>image/list.png</file>
+        <file>image/loading.png</file>
+        <file>image/loadinghover.png</file>
+        <file>image/musicback.png</file>
+        <file>image/musicbackhover.png</file>
+        <file>image/quietVolume.png</file>
+        <file>image/setback.png</file>
+        <file>image/setbackhover.png</file>
+        <file>image/Union.png</file>
+        <file>image/Union（1）.png</file>
+        <file>image/Vector.png</file>
+        <file>image/Volume.png</file>
+        <file>image/一路向北.jpg</file>
+        <file>image/button/hover.png</file>
+        <file>image/button/nexthover.png</file>
+        <file>image/button/prohover.png</file>
+    </qresource>
+</RCC>

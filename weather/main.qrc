@@ -55,5 +55,6 @@
         <file>res/type/ZhongXue.png</file>
         <file>res/type/ZhongYu.png</file>
         <file>res/xiaomisu7.jpg</file>
+        <file>res/xiaomisu7_1.jpg</file>
     </qresource>
 </RCC>

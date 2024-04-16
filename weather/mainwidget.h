@@ -1,12 +1,39 @@
 #ifndef MAINWIDGET_H
 #define MAINWIDGET_H
+#pragma execution_character_set("utf-8")
 
 #include <QWidget>
 #include "mainwindow.h"
 
+#include <QTimer>
+//#include <QMediaPlayer>
+#include <QUrl>
+#include "http.h"
+#include "controlwidget.h"
+#include "mqttlink.h"
+//#include "gps.h"
+//#include "texttovoice.h"
+//#include "netweather.h"
+
+//const QString baiduInversenUrl = "http://api.map.baidu.com/reverse_geocoding/v3/?ak=%1&output=json&coordtype=wgs84ll&location=%2,%3&";
+//const QString baiduAk = "dyAOxKuj5E4wOsukUNzOcmZKIxPdo8sC";
+
+//class musicwidget;
+
 QT_BEGIN_NAMESPACE
-namespace Ui { class Form; }
+namespace Ui { class MainWidget; }
 QT_END_NAMESPACE
+
+class baiduInverseData
+{
+public:
+    QString currentLat;
+    QString currentLon;
+    QString formattedAddress;
+    QString district;
+    QString town;
+    QString adcode;
+};
 
 class MainWidget : public QWidget
 {
@@ -16,6 +43,23 @@ public:
     MainWidget(QWidget *parent = nullptr);
     ~MainWidget();
 
+public:
+    void initSysDevStatus();
+    void catDoorLockStatusSeting(devSwitchStatus switchStatus);
+    void catOilLockStatusSeting(devSwitchStatus switchStatus);
+    void catTrunkLockStatusSeting(devSwitchStatus switchStatus);
+    void catWinLockStatusSeting(devSwitchStatus switchStatus);
+    void catHybridStatusSeting(devSwitchStatus switchStatus);
+    void catSpecificStatusSeting(devSwitchStatus switchStatus);
+
+//    bool acquireCurrentNetLocation(baiduInverseData *Data);
+
+//    void setMainWeatherIcon(QFrame *WeaBack, QWidget *WeaSubBack,QLabel *WeaSaying,QLabel *WeaTitle, QString nowWeather,int index);
+//    void setMainUiNetWeather(nowWeatherNet& Weather,nowIndexesNet &Indexes,nowAlertsNet& Alerts,forecastsNet& forecasts,forecastsHoursNet& forecastsHours);
+    void setDevIcon(devSwitchStatus wifi,devSwitchStatus bluetooth);
+
+//    void getGpsData(void);
+
 private slots:
     void on_btnOpenWeatherWindow_clicked();
 
@@ -23,12 +67,65 @@ private slots:
 
     void on_btnOpenControlWindow_clicked();
 
+private slots:
+//    void on_enterMusic_clicked();
+//    void on_pushButtonMusicBack_clicked();
+//    void on_pushButtonEnvroBack_clicked();
+//    void on_enterEnvironment_clicked();
+//    void on_enterContorl_clicked();
+//    void on_pushButtonCorlBack_clicked();
+//    void on_pushButtonOilLOck_clicked();
+//    void on_pushButtonTrunkLock_clicked();
+//    void on_pushButtonWinLock_clicked();
+//    void on_pushButtonHybrid_clicked();
+//    void on_pushButtonSpecific_clicked();
+    void timerTimeOut();
+//    void on_pushButtonWeatherBack_clicked();
+//    void on_enterWeather_clicked();
+//    void on_pushButtonMediaBack_clicked();
+//    void on_enterMediaPlayer_clicked();
+//    void on_pushButtonMapBack_clicked();
+//    void on_pushButtonEnterMap_clicked();
 
 
+//    void on_pushButtonOilLOck_clicked();
+
+//    void on_pushButtonTrunkLock_clicked();
+
+//    void on_pushButtonWinLock_clicked();
+
+//    void on_pushButtonHybrid_clicked();
+
+//    void on_pushButtonSpecific_clicked();
+
+//    void on_pushButtonDoorLock_clicked();
+
+//    void on_pushButtonWinLock_clicked();
+
+    void on_pushButtonDoorLock_clicked();
+
+    void on_pushButtonTrunkLock_clicked();
+
+//    void on_pushButtonOilLOck_clicked();
+
+//    void on_pushButtonWinLock_clicked();
+
+    void on_pushButtonHybrid_clicked();
+
+    void on_pushButtonSpecific_clicked();
 
 private:
-    Ui::Form *ui;
+    Ui::MainWidget *ui;
     MainWindow *mainWindow;
+
+private:
+    QTimer *mainTimer;
+    baiduInverseData *currentLocationData;
+//    gps *myGpsThread;
+//    textToVoice *mainTextToVoice;
+//    QMediaPlayer *player;
+//    Netweather mainCardWeather;
+    mqttLink *netMqttMsg;
 };
 
 #endif // MAINWIDGET_H

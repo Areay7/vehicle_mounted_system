@@ -862,23 +862,39 @@
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
+  /Users/areay7/Qt/6.8.0/macos/include/QtMqtt/qmqttclient.h \
+  /Users/areay7/Qt/6.8.0/macos/include/QtMqtt/qmqttglobal.h \
+  /Users/areay7/Qt/6.8.0/macos/include/QtMqtt/qmqttmessage.h \
+  /Users/areay7/Qt/6.8.0/macos/include/QtMqtt/qmqttpublishproperties.h \
+  /Users/areay7/Qt/6.8.0/macos/include/QtMqtt/qmqtttopicfilter.h \
+  /Users/areay7/Qt/6.8.0/macos/include/QtMqtt/qmqtttopicname.h \
+  /Users/areay7/Qt/6.8.0/macos/include/QtMqtt/qmqtttype.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QDebug \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QEventLoop \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QExplicitlySharedDataPointer \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QFlags \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QHash \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QIODevice \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QJsonArray \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QJsonDocument \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QJsonObject \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QJsonParseError \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QJsonValue \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QList \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QMap \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QMetaType \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QPair \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QProcess \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QRect \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSharedDataPointer \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSharedPointer \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSize \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QString \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QStringList \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QUrl \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/QVariant \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
@@ -894,6 +910,7 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qatomic.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbasicatomic.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbasictimer.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbindingstorage.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearray.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
@@ -969,6 +986,7 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qoverload.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qpair.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qpoint.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qprocess.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
@@ -1004,6 +1022,7 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtdeprecationmarkers.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtenvironmentvariables.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtextstream.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtimer.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtnoop.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/Headers/qtpreprocessorsupport.h \
@@ -1047,6 +1066,7 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpainter.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpicture.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qpointingdevice.h \
@@ -1056,6 +1076,7 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qscreen.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qscreen_platform.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qtextdocument.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qtextoption.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
@@ -1069,6 +1090,7 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QNetworkRequest \
   /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QSslConfiguration \
   /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QSslPreSharedKeyAuthenticator \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/QTcpSocket \
   /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qabstractsocket.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qhostaddress.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qnetworkaccessmanager.h \
@@ -1084,12 +1106,15 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qtnetwork-config.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkexports.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/Headers/qtnetworkglobal.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMenu \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMessageBox \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qdialog.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qdialogbuttonbox.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
+  /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmenu.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmessagebox.h \
@@ -1099,6 +1124,26 @@
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
   /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h \
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/controlwidget.h \
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/http.h \
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwidget.h \
   /Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwindow.h \
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/mqttlink.h \
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/sysdatatype.h \
   /Users/areay7/QtCode/Qt_learn/cmake_test/weather/weatherdata.h \
-  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/weathertool.h
+  /Users/areay7/QtCode/Qt_learn/cmake_test/weather/weathertool.h \
+  /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqttauthenticationproperties.h \
+  /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqttconnectionproperties.h \
+  /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqttglobal.h \
+  /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqttpublishproperties.h \
+  /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqttsubscription.h \
+  /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqttsubscriptionproperties.h \
+  /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qmqtttopicfilter.h \
+  /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/include/QtMqtt/qtmqttexports.h \
+  /Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttauthenticationproperties.h \
+  /Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttconnectionproperties.h \
+  /Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttglobal.h \
+  /Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttpublishproperties.h \
+  /Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttsubscription.h \
+  /Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttsubscriptionproperties.h \
+  /Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqtttopicfilter.h

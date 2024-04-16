@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/">
+        <file>mainImage/Battery.png</file>
+        <file>mainImage/Bluetooth2x.png</file>
+        <file>mainImage/cardCloudy.png</file>
+        <file>mainImage/cardOverset.png</file>
+        <file>mainImage/cardSnow.png</file>
+        <file>mainImage/cardSun.png</file>
+        <file>mainImage/cat.png</file>
+        <file>mainImage/catHybridOFF.png</file>
+        <file>mainImage/catHybridON.png</file>
+        <file>mainImage/catLockOFF.png</file>
+        <file>mainImage/catLockON.png</file>
+        <file>mainImage/catOilLockOFF.png</file>
+        <file>mainImage/catOilLockON.png</file>
+        <file>mainImage/catSpecificOFF.png</file>
+        <file>mainImage/catSpecificON.png</file>
+        <file>mainImage/catTrunkOFF.png</file>
+        <file>mainImage/catTrunkON.png</file>
+        <file>mainImage/main1.png</file>
+        <file>mainImage/main2.png</file>
+        <file>mainImage/main3.png</file>
+        <file>mainImage/main4.png</file>
+        <file>mainImage/main5.png</file>
+        <file>mainImage/main6.png</file>
+        <file>mainImage/main7.png</file>
+        <file>mainImage/mainControlPress.png</file>
+        <file>mainImage/mainControlRelease.png</file>
+        <file>mainImage/mainMusicPress.png</file>
+        <file>mainImage/mainMusicRelease.png</file>
+        <file>mainImage/mainother.png</file>
+        <file>mainImage/mainRecordPress.png</file>
+        <file>mainImage/mainRecordRelease.png</file>
+        <file>mainImage/mainTitle.png</file>
+        <file>mainImage/mainWeatherpress.png</file>
+        <file>mainImage/mainWeatherRelease.png</file>
+        <file>mainImage/mediaPlayerrePlacse.png</file>
+        <file>mainImage/mediaPlayerrepress.png</file>
+        <file>mainImage/RainIcon.png</file>
+        <file>mainImage/Signal.png</file>
+        <file>mainImage/wertherRainBack.png</file>
+        <file>mainImage/Wifi2x.png</file>
+        <file>mainImage/wertherRainBack2.jpg</file>
+    </qresource>
+</RCC>

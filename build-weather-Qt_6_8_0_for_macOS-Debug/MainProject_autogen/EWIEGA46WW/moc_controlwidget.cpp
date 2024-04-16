@@ -8,6 +8,7 @@
 
 #include "../../../weather/controlwidget.h"
 #include <QtNetwork/QSslError>
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -36,7 +37,24 @@ struct qt_meta_stringdata_CLASSControlWidgetENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSControlWidgetENDCLASS = QtMocHelpers::stringData(
     "ControlWidget",
     "returnToMainWidget",
-    ""
+    "",
+    "on_pushButtonSetLED_clicked",
+    "on_pushButtonSetDoor_clicked",
+    "on_pushButtonSetMode_clicked",
+    "on_pushButtonTemperSw_clicked",
+    "on_pushButtonAdd_pressed",
+    "on_pushButtonAdd_released",
+    "on_pushButtonSub_pressed",
+    "on_pushButtonSub_released",
+    "on_pushButtonHumSw_clicked",
+    "on_pushButtonSetHumAdd_pressed",
+    "on_pushButtonSetHumAdd_released",
+    "on_pushButtonSetHumSub_pressed",
+    "on_pushButtonSetHumSub_released",
+    "timerTimeOut",
+    "on_pushButtonSetWIFI_clicked",
+    "on_pushButtonSetBlue_clicked",
+    "on_pushButtonEdit_clicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -49,7 +67,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSControlWidgetENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+      18,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -57,9 +75,43 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSControlWidgetENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   20,    2, 0x0a,    1 /* Public */,
+       1,    0,  122,    2, 0x0a,    1 /* Public */,
+       3,    0,  123,    2, 0x08,    2 /* Private */,
+       4,    0,  124,    2, 0x08,    3 /* Private */,
+       5,    0,  125,    2, 0x08,    4 /* Private */,
+       6,    0,  126,    2, 0x08,    5 /* Private */,
+       7,    0,  127,    2, 0x08,    6 /* Private */,
+       8,    0,  128,    2, 0x08,    7 /* Private */,
+       9,    0,  129,    2, 0x08,    8 /* Private */,
+      10,    0,  130,    2, 0x08,    9 /* Private */,
+      11,    0,  131,    2, 0x08,   10 /* Private */,
+      12,    0,  132,    2, 0x08,   11 /* Private */,
+      13,    0,  133,    2, 0x08,   12 /* Private */,
+      14,    0,  134,    2, 0x08,   13 /* Private */,
+      15,    0,  135,    2, 0x08,   14 /* Private */,
+      16,    0,  136,    2, 0x08,   15 /* Private */,
+      17,    0,  137,    2, 0x08,   16 /* Private */,
+      18,    0,  138,    2, 0x08,   17 /* Private */,
+      19,    0,  139,    2, 0x08,   18 /* Private */,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -75,6 +127,40 @@ Q_CONSTINIT const QMetaObject ControlWidget::staticMetaObject = { {
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<ControlWidget, std::true_type>,
         // method 'returnToMainWidget'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSetLED_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSetDoor_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSetMode_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonTemperSw_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonAdd_pressed'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonAdd_released'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSub_pressed'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSub_released'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonHumSw_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSetHumAdd_pressed'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSetHumAdd_released'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSetHumSub_pressed'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSetHumSub_released'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'timerTimeOut'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSetWIFI_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSetBlue_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonEdit_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -87,6 +173,23 @@ void ControlWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         (void)_t;
         switch (_id) {
         case 0: _t->returnToMainWidget(); break;
+        case 1: _t->on_pushButtonSetLED_clicked(); break;
+        case 2: _t->on_pushButtonSetDoor_clicked(); break;
+        case 3: _t->on_pushButtonSetMode_clicked(); break;
+        case 4: _t->on_pushButtonTemperSw_clicked(); break;
+        case 5: _t->on_pushButtonAdd_pressed(); break;
+        case 6: _t->on_pushButtonAdd_released(); break;
+        case 7: _t->on_pushButtonSub_pressed(); break;
+        case 8: _t->on_pushButtonSub_released(); break;
+        case 9: _t->on_pushButtonHumSw_clicked(); break;
+        case 10: _t->on_pushButtonSetHumAdd_pressed(); break;
+        case 11: _t->on_pushButtonSetHumAdd_released(); break;
+        case 12: _t->on_pushButtonSetHumSub_pressed(); break;
+        case 13: _t->on_pushButtonSetHumSub_released(); break;
+        case 14: _t->timerTimeOut(); break;
+        case 15: _t->on_pushButtonSetWIFI_clicked(); break;
+        case 16: _t->on_pushButtonSetBlue_clicked(); break;
+        case 17: _t->on_pushButtonEdit_clicked(); break;
         default: ;
         }
     }
@@ -112,13 +215,13 @@ int ControlWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 18)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 18;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 18)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 18;
     }
     return _id;
 }
