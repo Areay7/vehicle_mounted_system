@@ -1161,6 +1161,7 @@
  mdp:/Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttsubscription.h
  mdp:/Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttsubscriptionproperties.h
  mdp:/Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqtttopicfilter.h
+/Users/areay7/QtCode/Qt_learn/cmake_test/weather/wifilistwidget.h
 /Users/areay7/QtCode/Qt_learn/cmake_test/weather/mqttlink.h
  mmc:Q_OBJECT
  mdp:/Users/areay7/QtCode/Qt_learn/cmake_test/weather/mqttlink.h
@@ -2256,7 +2257,6 @@
  mdp:/Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttsubscription.h
  mdp:/Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqttsubscriptionproperties.h
  mdp:/Users/areay7/QtCode/stm32/qtmqtt/src/mqtt/qmqtttopicfilter.h
-/Users/areay7/QtCode/Qt_learn/cmake_test/weather/wifilistwidget.h
 /Users/areay7/QtCode/Qt_learn/cmake_test/weather/weatherdata.h
 /Users/areay7/QtCode/Qt_learn/cmake_test/weather/mainwindow.cpp
  uic:ui_mainwindow.h

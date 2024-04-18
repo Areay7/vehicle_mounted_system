@@ -394,10 +394,10 @@ void MainWidget::timerTimeOut()
         netMqttMsg->mqttReceFlag=false;
     }
     // 刷新状态
-//    setDevIcon(sysDevStatus.wifiStatus,sysDevStatus.bluetoothStatus);
-//    catDoorLockStatusSeting(sysDevStatus.doorStatus);
+    setDevIcon(sysDevStatus.wifiStatus,sysDevStatus.bluetoothStatus);
+    catDoorLockStatusSeting(sysDevStatus.doorStatus);
 //    carWinLockStatusSeting(sysDevStatus.carWinLockStatus);
-//    catTrunkLockStatusSeting(sysDevStatus.carTrunkLockStatus);
+    catTrunkLockStatusSeting(sysDevStatus.carTrunkLockStatus);
 //    catOilLockStatusSeting(sysDevStatus.carOilLockStatus);
 
     //发送到远程APP端
@@ -412,7 +412,7 @@ void MainWidget::timerTimeOut()
         sysDevStatus.GPSAddress=currentLocationData->formattedAddress;
         qDebug()<<sysDevStatus.GPSAddress;
 
-        test.batteryCapacity=90;
+        test.batteryCapacity=87;
         test.vehInsideTemp=sysDevStatus.currentTermper;
         test.veHumidity=sysDevStatus.currentHumidity;
         test.carAcModeStatus=sysDevStatus.condMode;
