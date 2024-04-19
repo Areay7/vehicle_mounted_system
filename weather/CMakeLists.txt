@@ -37,6 +37,8 @@ set(PROJECT_SOURCES
     environmentwidget.ui
     controlwidget.ui
     wifilistwidget.ui
+    systemtime.ui
+    musicwidget.ui
     main.qrc
     control.qrc
     mainpage.qrc

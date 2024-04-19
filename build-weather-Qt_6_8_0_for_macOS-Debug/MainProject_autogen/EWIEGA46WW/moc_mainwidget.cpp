@@ -41,10 +41,16 @@ constexpr auto qt_meta_stringdata_CLASSMainWidgetENDCLASS = QtMocHelpers::string
     "on_btnOpenSituationWindow_clicked",
     "on_btnOpenControlWindow_clicked",
     "timerTimeOut",
+    "on_pushButtonHybrid_clicked",
+    "on_pushButtonSpecific_clicked",
     "on_pushButtonDoorLock_clicked",
     "on_pushButtonTrunkLock_clicked",
-    "on_pushButtonHybrid_clicked",
-    "on_pushButtonSpecific_clicked"
+    "on_enterMusic_clicked",
+    "on_pushButtonMusicBack_clicked",
+    "on_pushButtonEnvroBack_clicked",
+    "on_enterEnvironment_clicked",
+    "on_enterContorl_clicked",
+    "on_pushButtonCorlBack_clicked"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -57,7 +63,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWidgetENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -65,16 +71,28 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWidgetENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   62,    2, 0x08,    1 /* Private */,
-       3,    0,   63,    2, 0x08,    2 /* Private */,
-       4,    0,   64,    2, 0x08,    3 /* Private */,
-       5,    0,   65,    2, 0x08,    4 /* Private */,
-       6,    0,   66,    2, 0x08,    5 /* Private */,
-       7,    0,   67,    2, 0x08,    6 /* Private */,
-       8,    0,   68,    2, 0x08,    7 /* Private */,
-       9,    0,   69,    2, 0x08,    8 /* Private */,
+       1,    0,   98,    2, 0x08,    1 /* Private */,
+       3,    0,   99,    2, 0x08,    2 /* Private */,
+       4,    0,  100,    2, 0x08,    3 /* Private */,
+       5,    0,  101,    2, 0x08,    4 /* Private */,
+       6,    0,  102,    2, 0x08,    5 /* Private */,
+       7,    0,  103,    2, 0x08,    6 /* Private */,
+       8,    0,  104,    2, 0x08,    7 /* Private */,
+       9,    0,  105,    2, 0x08,    8 /* Private */,
+      10,    0,  106,    2, 0x08,    9 /* Private */,
+      11,    0,  107,    2, 0x08,   10 /* Private */,
+      12,    0,  108,    2, 0x08,   11 /* Private */,
+      13,    0,  109,    2, 0x08,   12 /* Private */,
+      14,    0,  110,    2, 0x08,   13 /* Private */,
+      15,    0,  111,    2, 0x08,   14 /* Private */,
 
  // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -104,13 +122,25 @@ Q_CONSTINIT const QMetaObject MainWidget::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'timerTimeOut'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonHybrid_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonSpecific_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButtonDoorLock_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButtonTrunkLock_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButtonHybrid_clicked'
+        // method 'on_enterMusic_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_pushButtonSpecific_clicked'
+        // method 'on_pushButtonMusicBack_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonEnvroBack_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_enterEnvironment_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_enterContorl_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButtonCorlBack_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -126,10 +156,16 @@ void MainWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->on_btnOpenSituationWindow_clicked(); break;
         case 2: _t->on_btnOpenControlWindow_clicked(); break;
         case 3: _t->timerTimeOut(); break;
-        case 4: _t->on_pushButtonDoorLock_clicked(); break;
-        case 5: _t->on_pushButtonTrunkLock_clicked(); break;
-        case 6: _t->on_pushButtonHybrid_clicked(); break;
-        case 7: _t->on_pushButtonSpecific_clicked(); break;
+        case 4: _t->on_pushButtonHybrid_clicked(); break;
+        case 5: _t->on_pushButtonSpecific_clicked(); break;
+        case 6: _t->on_pushButtonDoorLock_clicked(); break;
+        case 7: _t->on_pushButtonTrunkLock_clicked(); break;
+        case 8: _t->on_enterMusic_clicked(); break;
+        case 9: _t->on_pushButtonMusicBack_clicked(); break;
+        case 10: _t->on_pushButtonEnvroBack_clicked(); break;
+        case 11: _t->on_enterEnvironment_clicked(); break;
+        case 12: _t->on_enterContorl_clicked(); break;
+        case 13: _t->on_pushButtonCorlBack_clicked(); break;
         default: ;
         }
     }
@@ -155,13 +191,13 @@ int MainWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 14;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 14)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 14;
     }
     return _id;
 }

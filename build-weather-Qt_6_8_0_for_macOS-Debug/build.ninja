@@ -255,7 +255,7 @@ build MainProject_autogen_timestamp_deps: phony CMakeFiles/MainProject_autogen_t
 #############################################
 # Utility command for MainProject_autogen
 
-build MainProject_autogen: phony CMakeFiles/MainProject_autogen MainProject_autogen/include/ui_mainwindow.h MainProject_autogen/include/ui_mainwidget.h MainProject_autogen/include/ui_currentsituation.h MainProject_autogen/include/ui_environmentwidget.h MainProject_autogen/include/ui_controlwidget.h MainProject_autogen/include/ui_wifilistwidget.h MainProject_autogen/timestamp MainProject_autogen/mocs_compilation.cpp MainProject_autogen_timestamp_deps
+build MainProject_autogen: phony CMakeFiles/MainProject_autogen MainProject_autogen/include/ui_mainwindow.h MainProject_autogen/include/ui_mainwidget.h MainProject_autogen/include/ui_currentsituation.h MainProject_autogen/include/ui_environmentwidget.h MainProject_autogen/include/ui_controlwidget.h MainProject_autogen/include/ui_wifilistwidget.h MainProject_autogen/include/ui_systemtime.h MainProject_autogen/include/ui_musicwidget.h MainProject_autogen/timestamp MainProject_autogen/mocs_compilation.cpp MainProject_autogen_timestamp_deps
 
 
 #############################################
@@ -307,13 +307,13 @@ build MainProject_autogen/ERQA6BQ4BU/qrc_musicPlayer.cpp | ${cmake_ninja_workdir
 #############################################
 # Phony custom command for CMakeFiles/MainProject_autogen_timestamp_deps
 
-build CMakeFiles/MainProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MainProject_autogen_timestamp_deps: phony /Users/areay7/Qt/6.8.0/macos/./libexec/moc /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/QtNetwork /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib/QtMqtt.framework/Versions/A/QtMqtt /Users/areay7/Qt/6.8.0/macos/./libexec/uic /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
+build CMakeFiles/MainProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/MainProject_autogen_timestamp_deps: phony /Users/areay7/Qt/6.8.0/macos/./libexec/uic /Users/areay7/Qt/6.8.0/macos/./libexec/moc /Users/areay7/Qt/6.8.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/areay7/Qt/6.8.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/areay7/Qt/6.8.0/macos/lib/QtNetwork.framework/Versions/A/QtNetwork /Users/areay7/QtCode/stm32/build-qtmqtt-Qt_6_8_0_for_macOS-Debug/lib/QtMqtt.framework/Versions/A/QtMqtt
 
 
 #############################################
 # Phony custom command for CMakeFiles/MainProject_autogen
 
-build CMakeFiles/MainProject_autogen MainProject_autogen/include/ui_mainwindow.h MainProject_autogen/include/ui_mainwidget.h MainProject_autogen/include/ui_currentsituation.h MainProject_autogen/include/ui_environmentwidget.h MainProject_autogen/include/ui_controlwidget.h MainProject_autogen/include/ui_wifilistwidget.h | ${cmake_ninja_workdir}CMakeFiles/MainProject_autogen ${cmake_ninja_workdir}MainProject_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_mainwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_currentsituation.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_environmentwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_controlwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_wifilistwidget.h: phony MainProject_autogen/timestamp || MainProject_autogen_timestamp_deps
+build CMakeFiles/MainProject_autogen MainProject_autogen/include/ui_mainwindow.h MainProject_autogen/include/ui_mainwidget.h MainProject_autogen/include/ui_currentsituation.h MainProject_autogen/include/ui_environmentwidget.h MainProject_autogen/include/ui_controlwidget.h MainProject_autogen/include/ui_wifilistwidget.h MainProject_autogen/include/ui_systemtime.h MainProject_autogen/include/ui_musicwidget.h | ${cmake_ninja_workdir}CMakeFiles/MainProject_autogen ${cmake_ninja_workdir}MainProject_autogen/include/ui_mainwindow.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_mainwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_currentsituation.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_environmentwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_controlwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_wifilistwidget.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_systemtime.h ${cmake_ninja_workdir}MainProject_autogen/include/ui_musicwidget.h: phony MainProject_autogen/timestamp || MainProject_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

@@ -85,6 +85,67 @@ void MainWidget::on_btnOpenControlWindow_clicked()
     hide();
 }
 
+/********************************************************************/
+void MainWidget::on_enterMusic_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+void MainWidget::on_pushButtonMusicBack_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWidget::on_pushButtonEnvroBack_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWidget::on_enterEnvironment_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+void MainWidget::on_enterContorl_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+//void MainWidget::on_enterWeather_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(4);
+//}
+
+
+void MainWidget::on_pushButtonCorlBack_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+//void MainWidget::on_pushButtonWeatherBack_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(0);
+//}
+
+//void MainWidget::on_pushButtonMediaBack_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(0);
+//}
+
+//void MainWidget::on_enterMediaPlayer_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(6);
+//}
+//void MainWidget::on_pushButtonMapBack_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(0);
+//}
+
+//void MainWidget::on_pushButtonEnterMap_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(5);
+//}
+
 
 void MainWidget::setDevIcon(devSwitchStatus wifi, devSwitchStatus bluetooth)
 {
@@ -113,10 +174,10 @@ void MainWidget::initSysDevStatus()
     sysDevStatus.linkWifiSSID="noting";
     sysDevStatus.wifiLinkStatus=false;
     sysDevStatus.doorStatus=OFF;
-//    sysDevStatus.carHybridStatus=OFF;
-//    sysDevStatus.catOilLockStatus=OFF;
-//    sysDevStatus.catSpecificStatus=OFF;
-//    sysDevStatus.catTrunkLockStatus=OFF;
+    sysDevStatus.carHybridStatus=OFF;
+    sysDevStatus.carOilLockStatus=OFF;
+    sysDevStatus.carSpecificStatus=OFF;
+    sysDevStatus.carTrunkLockStatus=OFF;
 //    sysDevStatus.carWinLockStatus=OFF;
     sysDevStatus.wifiStatus=OFF;
     sysDevStatus.bluetoothStatus=OFF;
