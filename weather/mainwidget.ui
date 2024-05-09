@@ -248,7 +248,7 @@ background-color: rgb(234, 243, 244);</string>
       <enum>Qt::Vertical</enum>
      </property>
     </widget>
-    <widget class="QPushButton" name="btnOpenWeatherWindow_2">
+    <widget class="QPushButton" name="btnOpenRemoteWindow">
      <property name="geometry">
       <rect>
        <x>720</x>

@@ -9,7 +9,8 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 COMPONENTS Widgets Mqtt Network REQUIRED)
+# Find required Qt components including WebEngineWidgets
+find_package(Qt6 COMPONENTS Widgets Mqtt Network WebEngineWidgets REQUIRED)
 
 set(PROJECT_SOURCES
     main.cpp
@@ -41,6 +42,9 @@ set(PROJECT_SOURCES
     control.qrc
     mainpage.qrc
     musicPlayer//musicPlayer.qrc
+    remote/remotecontrol.cpp
+    remote/remotecontrol.h
+    remote/remotecontrol.ui
 )
 
 if(Qt6_FOUND)
@@ -60,7 +64,7 @@ else()
     endif()
 endif()
 
-target_link_libraries(MainProject PRIVATE Qt6::Widgets Qt6::Mqtt Qt6::Network)
+target_link_libraries(MainProject PRIVATE Qt6::Widgets Qt6::Mqtt Qt6::Network Qt6::WebEngineWidgets)
 
 set_target_properties(MainProject PROPERTIES
     MACOSX_BUNDLE TRUE

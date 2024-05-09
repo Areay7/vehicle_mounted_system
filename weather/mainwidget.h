@@ -4,6 +4,7 @@
 
 #include <QWidget>
 #include "mainwindow.h"
+#include "./remote/remotecontrol.h"
 
 #include <QTimer>
 //#include <QMediaPlayer>
@@ -114,9 +115,12 @@ private slots:
 
     void on_pushButtonSpecific_clicked();
 
+    void on_btnOpenRemoteWindow_clicked();
+
 private:
     Ui::MainWidget *ui;
     MainWindow *mainWindow;
+    RemoteWindow *remoteWindow;
 
 private:
     QTimer *mainTimer;

@@ -7,6 +7,8 @@
 #include <QProcess>
 #include <QUrl>
 
+#include "./remote/remotecontrol.h"
+
 
 extern devStatus mainDevIcon;
 extern devStatus sysDevStatus;
@@ -27,6 +29,8 @@ MainWidget::MainWidget(QWidget *parent)
 //    ui->label->setPixmap(pixmap);
 
     mainWindow = new MainWindow(this); // 分配内存给 mainWindow 指针
+
+    remoteWindow = new RemoteWindow(this);
 
 /******************************************************************/
     //timer
@@ -113,10 +117,10 @@ void MainWidget::initSysDevStatus()
     sysDevStatus.linkWifiSSID="noting";
     sysDevStatus.wifiLinkStatus=false;
     sysDevStatus.doorStatus=OFF;
-//    sysDevStatus.carHybridStatus=OFF;
-//    sysDevStatus.catOilLockStatus=OFF;
-//    sysDevStatus.catSpecificStatus=OFF;
-//    sysDevStatus.catTrunkLockStatus=OFF;
+    sysDevStatus.carHybridStatus=OFF;
+    sysDevStatus.carOilLockStatus=OFF;
+    sysDevStatus.carSpecificStatus=OFF;
+    sysDevStatus.carTrunkLockStatus=OFF;
 //    sysDevStatus.carWinLockStatus=OFF;
     sysDevStatus.wifiStatus=OFF;
     sysDevStatus.bluetoothStatus=OFF;
@@ -439,5 +443,13 @@ void MainWidget::timerTimeOut()
 //            }
         }
     }
+}
+
+
+void MainWidget::on_btnOpenRemoteWindow_clicked()
+{
+    remoteWindow->show();
+
+    hide();
 }
 
