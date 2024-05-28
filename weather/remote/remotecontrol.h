@@ -46,6 +46,10 @@ private slots:
 
     void on_pushButtonTurnRight_released();
 
+    void on_pushButtonStop_pressed();
+
+    void on_pushButtonStop_released();
+
 private:
     Ui::RemoteWindow *ui;
     QWebEngineView* view;

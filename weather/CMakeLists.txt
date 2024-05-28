@@ -38,6 +38,8 @@ set(PROJECT_SOURCES
     environmentwidget.ui
     controlwidget.ui
     wifilistwidget.ui
+    systemtime.ui
+    musicwidget.ui
     main.qrc
     control.qrc
     mainpage.qrc
@@ -45,6 +47,14 @@ set(PROJECT_SOURCES
     remote/remotecontrol.cpp
     remote/remotecontrol.h
     remote/remotecontrol.ui
+    remote/remoteview.cpp
+    remote/remoteview.h
+    remote/remoteview.ui
+    remoteRes.qrc
+    record.h
+    record.cpp
+    specch.h
+    specch.cpp
 )
 
 if(Qt6_FOUND)

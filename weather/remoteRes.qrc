@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>remoteRes/IP.png</file>
+        <file>remoteRes/port.png</file>
+        <file>remoteRes/shang.png</file>
+        <file>remoteRes/xia.png</file>
+        <file>remoteRes/you.png</file>
+        <file>remoteRes/zuo.png</file>
+        <file>remoteRes/stop.png</file>
+        <file>remoteRes/true.png</file>
+    </qresource>
+</RCC>

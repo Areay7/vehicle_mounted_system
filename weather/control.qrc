@@ -32,5 +32,6 @@
         <file>image/WIFISwitchOFF.png</file>
         <file>image/WIFISwitchON.png</file>
         <file>wav/receiv.wav</file>
+        <file>wav/qichaung.wav</file>
     </qresource>
 </RCC>

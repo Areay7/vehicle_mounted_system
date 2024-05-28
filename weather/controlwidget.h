@@ -7,6 +7,8 @@
 #include <QProcess>
 #include "mainwidget.h"
 #include "mqttlink.h"
+#include "record.h"
+#include "specch.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -51,7 +53,7 @@ class ControlWidget : public QWidget
 public:
     explicit ControlWidget(QWidget *parent = nullptr);
     ~ControlWidget();
-//    void voiceControl(QString Text);
+   void voiceControl(QString Text);
 
 protected:
     // 重写父类方法
@@ -111,6 +113,10 @@ private slots:
 
     void on_pushButtonEdit_clicked();
 
+    void on_pushButtonVoice_pressed();
+
+    void on_pushButtonVoice_released();
+
 private:
     void ledStatusSeting(devSwitchStatus switchStatus);
     void doorStatusSeting(devSwitchStatus switchStatus);
@@ -122,9 +128,9 @@ private:
     void bluetoothSwStatusSeting(devSwitchStatus switchStatus);
 
     QTimer *controlTimer;
-//    specch *voicSpecch;
-//    record * recordVoiceThread;
-//    QString voiceToText;
+   specch *voicSpecch;
+   record * recordVoiceThread;
+   QString voiceToText;
 
     QProcess *m_process;
     QStringList ledArguments;

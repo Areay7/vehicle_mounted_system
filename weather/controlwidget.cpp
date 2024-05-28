@@ -12,6 +12,7 @@ ControlWidget::ControlWidget(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->label_28->setStyleSheet("color:#4aa2a7; border:none;");
+
     setWindowFlag(Qt::FramelessWindowHint); // 设置窗口无边框
     setFixedSize(width(), height());
 
@@ -51,6 +52,9 @@ ControlWidget::ControlWidget(QWidget *parent) :
             returnToMainWidget();
 
     });
+
+    recordVoiceThread = new record();
+    connect(recordVoiceThread,&record::recordCorlRunFlagSignal,recordVoiceThread,&record::recordCorlRunFlag);
 
 }
 
@@ -502,4 +506,84 @@ void ControlWidget::on_pushButtonEdit_clicked()
 {
     ui->textEdit->clear();
 }
+
+
+/*==============voice===============*/
+void ControlWidget::on_pushButtonVoice_pressed()
+{
+    QString buttonStyle;
+    buttonStyle= QString(" QPushButton {border-radius: 21px;border-image: url(:/image/recordVoiceBackPress.png);background: rgba(0,0,0,0%);}");
+    ui->pushButtonVoice->setStyleSheet(buttonStyle);
+    // ui->stackedWidgetSetting->setCurrentIndex(0);
+    qDebug()<<"Start record";
+    emit recordVoiceThread->recordCorlRunFlagSignal(1);
+    recordVoiceThread->start();
+}
+
+
+void ControlWidget::on_pushButtonVoice_released()
+{
+    QString buttonStyle;
+    buttonStyle= QString(" QPushButton {border-radius: 21px;border-image: url(:/image/recordVoiceBackRelace.png);background: rgba(0,0,0,0%);}");
+    ui->pushButtonVoice->setStyleSheet(buttonStyle);
+    emit recordVoiceThread->recordCorlRunFlagSignal(0);
+    qDebug()<<"Stop record";
+    QString resultText;
+    // resultText=voicSpecch->speechIdentify(":/wav/receiv.wav");
+    resultText=voicSpecch->speechIdentify(":/wav/qichaung.wav");
+    qDebug()<<"reslut:"<<resultText;
+    voiceToText="你好";
+    voiceControl(voiceToText);
+
+    resultText=QString("   user:"+resultText+"\n");
+    ui->textEdit->append(resultText);
+    recordVoiceThread->exit();
+}
+/*==============voice===============*/
+
+
+void ControlWidget::voiceControl(QString Text)
+{
+    //    if (Text=="开灯")
+    //    {
+    //        sysDevStatus.ledStatus=OFF;
+    //        condSwStatusSeting(sysDevStatus.ledStatus);
+    //    }
+    //    else if (Text=="关灯")
+    //    {
+    //        sysDevStatus.ledStatus=ON;
+    //        condSwStatusSeting(sysDevStatus.ledStatus);
+    //    }
+    //    else if (Text=="开空调")
+    //    {
+    //      sysDevStatus.condSWStatus=OFF;
+    //      condSwStatusSeting(sysDevStatus.condSWStatus);
+    //    }
+    //    else if (Text=="关空调")
+    //    {
+    //      sysDevStatus.condSWStatus=ON;
+    //      condSwStatusSeting(sysDevStatus.condSWStatus);
+    //    }
+    //    else if (Text=="开蓝牙")
+    //    {
+    //        sysDevStatus.bluetoothStatus=OFF;
+    //        condSwStatusSeting(sysDevStatus.bluetoothStatus);
+    //    }
+    //    else if (Text=="关蓝牙")
+    //    {
+    //        sysDevStatus.bluetoothStatus=ON;
+    //        condSwStatusSeting(sysDevStatus.bluetoothStatus);
+    //    }
+    //    else if (Text=="开无线网")
+    //    {
+    //        sysDevStatus.wifiStatus=OFF;
+    //        condSwStatusSeting(sysDevStatus.wifiStatus);
+    //    }
+    //    else if (Text=="关无线网")
+    //    {
+    //        sysDevStatus.wifiStatus=ON;
+    //        condSwStatusSeting(sysDevStatus.wifiStatus);
+    //    }
+}
+
 

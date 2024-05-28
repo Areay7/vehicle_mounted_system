@@ -8,6 +8,7 @@
 #include <QUrl>
 
 #include "./remote/remotecontrol.h"
+#include "./remote/remoteview.h"
 
 
 extern devStatus mainDevIcon;
@@ -19,6 +20,7 @@ MainWidget::MainWidget(QWidget *parent)
 {
 
     ui->setupUi(this);
+    // setWindowFlag(Qt::FramelessWindowHint); // 设置窗口无边框
     // 使用 QIcon 加载图像文件
 //    QIcon icon(":/res/xiaomisu7_1.jpg");
 
@@ -31,6 +33,8 @@ MainWidget::MainWidget(QWidget *parent)
     mainWindow = new MainWindow(this); // 分配内存给 mainWindow 指针
 
     remoteWindow = new RemoteWindow(this);
+
+
 
 /******************************************************************/
     //timer
@@ -68,10 +72,13 @@ void MainWidget::on_btnOpenWeatherWindow_clicked()
 void MainWidget::on_btnOpenSituationWindow_clicked()
 {
     // 创建 CurrentSituation 窗口对象
-    CurrentSituation *situationWindow = new CurrentSituation();
+    // CurrentSituation *situationWindow = new CurrentSituation();
 
     // 显示 CurrentSituation 窗口
-    situationWindow->show();
+    // situationWindow->show();
+
+    RemoteViewWindow *remoteViewWindow = new RemoteViewWindow();
+    remoteViewWindow->show();
     hide(); // 隐藏当前窗口
 }
 
@@ -83,11 +90,72 @@ void MainWidget::on_btnOpenControlWindow_clicked()
 {
     // 创建并显示 ControlWidget 窗口，并传递 MainWidget 对象的指针
     ControlWidget *controlWidget = new ControlWidget();
-
-
     controlWidget->show();
+
+
     hide();
 }
+
+/********************************************************************/
+void MainWidget::on_enterMusic_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+void MainWidget::on_pushButtonMusicBack_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWidget::on_pushButtonEnvroBack_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWidget::on_enterEnvironment_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+void MainWidget::on_enterContorl_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+//void MainWidget::on_enterWeather_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(4);
+//}
+
+
+void MainWidget::on_pushButtonCorlBack_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+//void MainWidget::on_pushButtonWeatherBack_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(0);
+//}
+
+//void MainWidget::on_pushButtonMediaBack_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(0);
+//}
+
+//void MainWidget::on_enterMediaPlayer_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(6);
+//}
+//void MainWidget::on_pushButtonMapBack_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(0);
+//}
+
+//void MainWidget::on_pushButtonEnterMap_clicked()
+//{
+//    ui->stackedWidget->setCurrentIndex(5);
+//}
 
 
 void MainWidget::setDevIcon(devSwitchStatus wifi, devSwitchStatus bluetooth)

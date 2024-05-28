@@ -69,39 +69,10 @@ private slots:
     void on_btnOpenControlWindow_clicked();
 
 private slots:
-//    void on_enterMusic_clicked();
-//    void on_pushButtonMusicBack_clicked();
-//    void on_pushButtonEnvroBack_clicked();
-//    void on_enterEnvironment_clicked();
-//    void on_enterContorl_clicked();
-//    void on_pushButtonCorlBack_clicked();
-//    void on_pushButtonOilLOck_clicked();
-//    void on_pushButtonTrunkLock_clicked();
-//    void on_pushButtonWinLock_clicked();
-//    void on_pushButtonHybrid_clicked();
-//    void on_pushButtonSpecific_clicked();
     void timerTimeOut();
-//    void on_pushButtonWeatherBack_clicked();
-//    void on_enterWeather_clicked();
-//    void on_pushButtonMediaBack_clicked();
-//    void on_enterMediaPlayer_clicked();
-//    void on_pushButtonMapBack_clicked();
-//    void on_pushButtonEnterMap_clicked();
+    void on_pushButtonHybrid_clicked();
+    void on_pushButtonSpecific_clicked();
 
-
-//    void on_pushButtonOilLOck_clicked();
-
-//    void on_pushButtonTrunkLock_clicked();
-
-//    void on_pushButtonWinLock_clicked();
-
-//    void on_pushButtonHybrid_clicked();
-
-//    void on_pushButtonSpecific_clicked();
-
-//    void on_pushButtonDoorLock_clicked();
-
-//    void on_pushButtonWinLock_clicked();
 
     void on_pushButtonDoorLock_clicked();
 
@@ -111,9 +82,25 @@ private slots:
 
 //    void on_pushButtonWinLock_clicked();
 
-    void on_pushButtonHybrid_clicked();
 
-    void on_pushButtonSpecific_clicked();
+    void on_enterMusic_clicked();
+    void on_pushButtonMusicBack_clicked();
+    void on_pushButtonEnvroBack_clicked();
+    void on_enterEnvironment_clicked();
+    void on_enterContorl_clicked();
+    void on_pushButtonCorlBack_clicked();
+
+
+
+
+
+
+
+
+//    void on_pushButtonOilLOck_clicked();
+
+//    void on_pushButtonWinLock_clicked();
+
 
     void on_btnOpenRemoteWindow_clicked();
 

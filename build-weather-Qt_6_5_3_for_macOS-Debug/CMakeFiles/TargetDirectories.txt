@@ -1,0 +1,10 @@
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/MainProject.dir
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/MainProject_qmlimportscan.dir
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/install.dir
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/MainProject_autogen_timestamp_deps.dir
+/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/CMakeFiles/MainProject_autogen.dir

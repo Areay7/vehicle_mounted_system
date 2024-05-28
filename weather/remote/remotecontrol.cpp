@@ -7,6 +7,7 @@ RemoteWindow::RemoteWindow(QWidget *parent) :
     ui(new Ui::RemoteWindow)
 {
     this->setFixedSize(1200, 600); // 设置窗体固定大小
+    setWindowFlag(Qt::FramelessWindowHint); // 设置窗口无边框
 
     ui->setupUi(this);
     socket = nullptr;
@@ -74,8 +75,6 @@ void RemoteWindow::resizeEvent(QResizeEvent *)   //设置视频显示随窗口�
 }
 
 
-
-
 //==============================按键发送指令=================================
 
 //前进按键按下
@@ -83,12 +82,12 @@ void RemoteWindow::on_pushButtonGoHead_pressed()
 {
     if(NULL == socket)
     {
-        qDebug() << "Please connect" ;
+        ui->textEditInfomation->append("Please connect\n");
         this->close();
     }
     else
     {
-        socket->write("AA 01 DD",50);  //发送指令
+        socket->write("U",1);  //发送指令
         ui->textEditInfomation->append("前进\n");
     }
 }
@@ -98,12 +97,12 @@ void RemoteWindow::on_pushButtonTurnLeft_pressed()
 {
     if(NULL == socket)
     {
-        qDebug() << "Please connect" ;
+        ui->textEditInfomation->append("Please connect\n");
         this->close();
     }
     else
     {
-        socket->write("AA 02 DD",50);  //发送指令
+        socket->write("L",1);  //发送指令
         ui->textEditInfomation->append("左转\n");
     }
 }
@@ -114,12 +113,12 @@ void RemoteWindow::on_pushButtonGoBack_pressed()
 {
     if(NULL == socket)
     {
-        qDebug() << "Please connect" ;
+        ui->textEditInfomation->append("Please connect\n");
         this->close();
     }
     else
     {
-        socket->write("AA 03 DD",50);  //发送指令
+        socket->write("D",1);  //发送指令
         ui->textEditInfomation->append("后退\n");
     }
 }
@@ -129,13 +128,27 @@ void RemoteWindow::on_pushButtonTurnRight_pressed()
 {
     if(NULL == socket)
     {
-        qDebug() << "Please connect" ;
+        ui->textEditInfomation->append("Please connect\n");
         this->close();
     }
     else
     {
-        socket->write("AA 04 DD",50);  //发送指令
+        socket->write("R",1);  //发送指令
         ui->textEditInfomation->append("右转\n");
+    }
+}
+
+void RemoteWindow::on_pushButtonStop_pressed()
+{
+    if(NULL == socket)
+    {
+        ui->textEditInfomation->append("Please connect\n");
+        this->close();
+    }
+    else
+    {
+        socket->write("B",1);  //发送指令
+        ui->textEditInfomation->append("刹车\n");
     }
 }
 
@@ -144,27 +157,35 @@ void RemoteWindow::on_pushButtonTurnRight_pressed()
 //创造按键一直按着小车才会一直走的效果
 void RemoteWindow::on_pushButtonGoHead_released()
 {
-    socket->write("AA 00 DD",50);  //发送指令
+    socket->write("B",1);  //发送指令
     //ui->textEdit->append("停止\n");
 }
 
 void RemoteWindow::on_pushButtonTurnLeft_released()
 {
-    socket->write("AA 00 DD",50);  //发送指令
+    socket->write("B",1);  //发送指令
     //ui->textEdit->append("停止\n");
 }
 
 void RemoteWindow::on_pushButtonGoBack_released()
 {
-    socket->write("AA 00 DD",50);  //发送指令
+    socket->write("B",1);  //发送指令
     //ui->textEdit->append("停止\n");
 }
 
 void RemoteWindow::on_pushButtonTurnRight_released()
 {
-    socket->write("AA 00 DD",50);  //发送指令
+    socket->write("B",1);  //发送指令
     //ui->textEdit->append("停止\n");
 }
+
+void RemoteWindow::on_pushButtonStop_released()
+{
+    socket->write("B",1);  //发送指令
+    //ui->textEdit->append("停止\n");
+}
+
+
 
 
 //==============================按键发送指令=================================
@@ -182,10 +203,16 @@ void RemoteWindow::on_pushButtonLink_clicked()
     }
     ui->textEditInfomation->append("服务器连接成功\n");
 
-    socket->write("AA EA DD",50);  //发送指令
+    socket->write("B",5);  //发送指令
 }
 
 //===============================链接服务器===================================
+
+
+
+
+
+
 
 
 
