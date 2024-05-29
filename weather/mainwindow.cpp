@@ -218,7 +218,8 @@ void MainWindow::parseJson(QByteArray &byteArray)
     // 4.解析今天的数据
     mToday.ganmao = objData.value("ganmao").toString();
 
-    mToday.wendu = objData.value("wendu").toString().toInt();
+    // mToday.wendu = objData.value("wendu").toString().toInt();
+    mToday.wendu = objData.value("wendu").toString();
     mToday.shidu = objData.value("shidu").toString();
     mToday.pm25 = objData.value("pm25").toInt();
     mToday.quality = objData.value("quality").toString();
@@ -247,7 +248,10 @@ void MainWindow::updateUI()
 
     // 2.更新今天
     ui->lblTypeIcon->setPixmap(mTypeMap[mToday.type]);
-    ui->lblTemp->setText(QString::number(mToday.wendu) + "°");
+    // ui->lblTemp->setText(QString::number(mToday.wendu) + "°");
+    float temperature = mToday.wendu.toFloat();
+    int roundedTemperature = qRound(temperature);
+    ui->lblTemp->setText(QString::number(roundedTemperature) + "°");
     ui->lblType->setText(mToday.type);
     ui->lblLowHigh->setText(QString::number(mToday.low) + " ~ " + QString::number(mToday.high) + "°C");
 

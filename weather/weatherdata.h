@@ -22,7 +22,7 @@ public:
     QString date;
     QString city;
     QString ganmao;
-    int wendu;
+    QString wendu;
     QString shidu;
     int pm25;
     QString quality;
