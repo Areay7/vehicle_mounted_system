@@ -18,12 +18,12 @@ ControlWidget::ControlWidget(QWidget *parent) :
 
     /*****************************************************************/
     controlTimer = new QTimer;
-    controlTimer->start(1000);
+    controlTimer->start(10000); // 10s
     connect(controlTimer, SIGNAL(timeout()), this, SLOT(timerTimeOut()));
 
-//    voicSpecch = new specch();
-//    recordVoiceThread = new record();
-//    connect(recordVoiceThread,&record::recordCorlRunFlagSignal,recordVoiceThread,&record::recordCorlRunFlag);
+    voicSpecch = new specch();
+    recordVoiceThread = new record();
+    connect(recordVoiceThread,&record::recordCorlRunFlagSignal,recordVoiceThread,&record::recordCorlRunFlag);
 
     m_process = new QProcess;
 
@@ -53,8 +53,9 @@ ControlWidget::ControlWidget(QWidget *parent) :
 
     });
 
-    recordVoiceThread = new record();
-    connect(recordVoiceThread,&record::recordCorlRunFlagSignal,recordVoiceThread,&record::recordCorlRunFlag);
+    // voicSpecch = new specch();
+    // recordVoiceThread = new record();
+    // connect(recordVoiceThread,&record::recordCorlRunFlagSignal,recordVoiceThread,&record::recordCorlRunFlag);
 
 }
 
@@ -196,6 +197,7 @@ void ControlWidget::condSwStatusSeting(devSwitchStatus switchStatus)
     {
         buttonStyle= QString(" QPushButton {border-radius: 12px;border-image: url(:/image/TemperSwitchON.png);}");
         sysDevStatus.TermperSwitchStatus=ON;
+
     }
     else if(switchStatus==OFF)
     {
@@ -390,6 +392,9 @@ void ControlWidget::on_pushButtonSetWIFI_clicked()
         ui->stackedWidgetSetting->setCurrentIndex(1);
     }
     wifiSwStatusSeting(sysDevStatus.wifiStatus);
+    QWidget *currentWidget = ui->stackedWidgetSetting->currentWidget();
+    qDebug() << "Current widget index: " << ui->stackedWidgetSetting->currentIndex();
+    qDebug() << "Current widget: " << currentWidget;
 
 }
 
@@ -424,82 +429,55 @@ void ControlWidget::on_pushButtonSetBlue_clicked()
     bluetoothSwStatusSeting(sysDevStatus.bluetoothStatus);
 }
 
-/*==============voice===============*/
-//void ControlWidget::on_pushButtonVoice_pressed()
-//{
-//    QString buttonStyle;
-//    buttonStyle= QString(" QPushButton {border-radius: 21px;border-image: url(:/image/recordVoiceBackPress.png);background: rgba(0,0,0,0%);}");
-//    ui->pushButtonVoice->setStyleSheet(buttonStyle);
-//    ui->stackedWidgetSetting->setCurrentIndex(0);
-//    qDebug()<<"Start record";
-//    emit recordVoiceThread->recordCorlRunFlagSignal(1);
-//    recordVoiceThread->start();
 
-//}
+void ControlWidget::voiceControl(QString Text)
+{
+    qDebug() << Text << "666";
+       if (Text=="开灯。")
+       {
 
-//void ControlWidget::on_pushButtonVoice_released()
-//{
-//    QString buttonStyle;
-//    buttonStyle= QString(" QPushButton {border-radius: 21px;border-image: url(:/image/recordVoiceBackRelace.png);background: rgba(0,0,0,0%);}");
-//    ui->pushButtonVoice->setStyleSheet(buttonStyle);
-//    emit recordVoiceThread->recordCorlRunFlagSignal(0);
-//    qDebug()<<"Stop record";
-//    QString resultText;
-//    resultText=voicSpecch->speechIdentify(":/wav/receiv.wav");
-//    qDebug()<<"reslut:"<<resultText;
-//    voiceToText="你好";
-//    voiceControl(voiceToText);
+           sysDevStatus.ledStatus=ON;
+           // condSwStatusSeting(sysDevStatus.ledStatus);
+           ledStatusSeting(sysDevStatus.ledStatus);
 
-//    resultText=QString("   user:"+resultText+"\n");
-//    ui->textEdit->append(resultText);
-//    recordVoiceThread->exit();
-
-//}
-
-
-//void ControlWidget::voiceControl(QString Text)
-//{
-    //    if (Text=="开灯")
-    //    {
-    //        sysDevStatus.ledStatus=OFF;
-    //        condSwStatusSeting(sysDevStatus.ledStatus);
-    //    }
-    //    else if (Text=="关灯")
-    //    {
-    //        sysDevStatus.ledStatus=ON;
-    //        condSwStatusSeting(sysDevStatus.ledStatus);
-    //    }
-    //    else if (Text=="开空调")
-    //    {
-    //      sysDevStatus.condSWStatus=OFF;
-    //      condSwStatusSeting(sysDevStatus.condSWStatus);
-    //    }
-    //    else if (Text=="关空调")
-    //    {
-    //      sysDevStatus.condSWStatus=ON;
-    //      condSwStatusSeting(sysDevStatus.condSWStatus);
-    //    }
-    //    else if (Text=="开蓝牙")
-    //    {
-    //        sysDevStatus.bluetoothStatus=OFF;
-    //        condSwStatusSeting(sysDevStatus.bluetoothStatus);
-    //    }
-    //    else if (Text=="关蓝牙")
-    //    {
-    //        sysDevStatus.bluetoothStatus=ON;
-    //        condSwStatusSeting(sysDevStatus.bluetoothStatus);
-    //    }
-    //    else if (Text=="开无线网")
-    //    {
-    //        sysDevStatus.wifiStatus=OFF;
-    //        condSwStatusSeting(sysDevStatus.wifiStatus);
-    //    }
-    //    else if (Text=="关无线网")
-    //    {
-    //        sysDevStatus.wifiStatus=ON;
-    //        condSwStatusSeting(sysDevStatus.wifiStatus);
-    //    }
-//}
+       }
+       else if (Text=="关灯")
+       {
+           sysDevStatus.ledStatus=OFF;
+           // condSwStatusSeting(sysDevStatus.ledStatus);
+           ledStatusSeting(sysDevStatus.ledStatus);
+       }
+       else if (Text=="开空调")
+       {
+         sysDevStatus.condSWStatus=OFF;
+         condSwStatusSeting(sysDevStatus.condSWStatus);
+       }
+       else if (Text=="关空调")
+       {
+         sysDevStatus.condSWStatus=ON;
+         condSwStatusSeting(sysDevStatus.condSWStatus);
+       }
+       else if (Text=="开蓝牙")
+       {
+           sysDevStatus.bluetoothStatus=OFF;
+           condSwStatusSeting(sysDevStatus.bluetoothStatus);
+       }
+       else if (Text=="关蓝牙")
+       {
+           sysDevStatus.bluetoothStatus=ON;
+           condSwStatusSeting(sysDevStatus.bluetoothStatus);
+       }
+       else if (Text=="开无线网")
+       {
+           sysDevStatus.wifiStatus=OFF;
+           condSwStatusSeting(sysDevStatus.wifiStatus);
+       }
+       else if (Text=="关无线网")
+       {
+           sysDevStatus.wifiStatus=ON;
+           condSwStatusSeting(sysDevStatus.wifiStatus);
+       }
+}
 
 
 void ControlWidget::on_pushButtonEdit_clicked()
@@ -529,61 +507,19 @@ void ControlWidget::on_pushButtonVoice_released()
     emit recordVoiceThread->recordCorlRunFlagSignal(0);
     qDebug()<<"Stop record";
     QString resultText;
-    // resultText=voicSpecch->speechIdentify(":/wav/receiv.wav");
-    resultText=voicSpecch->speechIdentify(":/wav/qichaung.wav");
+    resultText=voicSpecch->speechIdentify(":/wav/receiv.wav");
+    // resultText=voicSpecch->speechIdentify(":/wav/qichaung.wav");
     qDebug()<<"reslut:"<<resultText;
     voiceToText="你好";
-    voiceControl(voiceToText);
+    voiceControl(resultText);
 
-    resultText=QString("   user:"+resultText+"\n");
+    resultText=QString("   user: "+resultText+"\n");
     ui->textEdit->append(resultText);
     recordVoiceThread->exit();
 }
 /*==============voice===============*/
 
 
-void ControlWidget::voiceControl(QString Text)
-{
-    //    if (Text=="开灯")
-    //    {
-    //        sysDevStatus.ledStatus=OFF;
-    //        condSwStatusSeting(sysDevStatus.ledStatus);
-    //    }
-    //    else if (Text=="关灯")
-    //    {
-    //        sysDevStatus.ledStatus=ON;
-    //        condSwStatusSeting(sysDevStatus.ledStatus);
-    //    }
-    //    else if (Text=="开空调")
-    //    {
-    //      sysDevStatus.condSWStatus=OFF;
-    //      condSwStatusSeting(sysDevStatus.condSWStatus);
-    //    }
-    //    else if (Text=="关空调")
-    //    {
-    //      sysDevStatus.condSWStatus=ON;
-    //      condSwStatusSeting(sysDevStatus.condSWStatus);
-    //    }
-    //    else if (Text=="开蓝牙")
-    //    {
-    //        sysDevStatus.bluetoothStatus=OFF;
-    //        condSwStatusSeting(sysDevStatus.bluetoothStatus);
-    //    }
-    //    else if (Text=="关蓝牙")
-    //    {
-    //        sysDevStatus.bluetoothStatus=ON;
-    //        condSwStatusSeting(sysDevStatus.bluetoothStatus);
-    //    }
-    //    else if (Text=="开无线网")
-    //    {
-    //        sysDevStatus.wifiStatus=OFF;
-    //        condSwStatusSeting(sysDevStatus.wifiStatus);
-    //    }
-    //    else if (Text=="关无线网")
-    //    {
-    //        sysDevStatus.wifiStatus=ON;
-    //        condSwStatusSeting(sysDevStatus.wifiStatus);
-    //    }
-}
+
 
 

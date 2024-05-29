@@ -904,7 +904,14 @@ background-color: rgb(29, 43, 50);</string>
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="pageWIFI"/>
+    <widget class="wifiListWidget" name="pageWIFI">
+     <property name="styleSheet">
+      <string notr="true">QWidget#pageWIFI
+{
+background-color: rgb(73, 92, 105);
+}</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="verticalLayout">
     <property name="geometry">
@@ -1020,6 +1027,14 @@ background: rgba(0,0,0,0%);</string>
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>wifiListWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">wifilistwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

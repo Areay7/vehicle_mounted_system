@@ -113,7 +113,7 @@ private:
     QTimer *mainTimer;
     baiduInverseData *currentLocationData;
 //    gps *myGpsThread;
-//    textToVoice *mainTextToVoice;
+   // textToVoice *mainTextToVoice;
 //    QMediaPlayer *player;
 //    Netweather mainCardWeather;
     mqttLink *netMqttMsg;

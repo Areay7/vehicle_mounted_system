@@ -156,7 +156,7 @@ void MainWindow::parseJson(QByteArray &byteArray)
     }
 
     QJsonObject rootObj = doc.object();
-    qDebug() << rootObj.value("message").toString();
+    //qDebug() << rootObj.value("message").toString();
 
     // 1.解析日期和城市
     mToday.date = rootObj.value("date").toString();
@@ -474,7 +474,7 @@ void MainWindow::onReplied(QNetworkReply *reply)
     }else
     {
         QByteArray byteArray =  reply->readAll();
-        qDebug() << "read all :" << byteArray.data();
+        // qDebug() << "read all :" << byteArray.data();
         parseJson(byteArray);
     }
     reply->deleteLater();

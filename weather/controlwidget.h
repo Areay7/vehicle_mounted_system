@@ -128,12 +128,15 @@ private:
     void bluetoothSwStatusSeting(devSwitchStatus switchStatus);
 
     QTimer *controlTimer;
-   specch *voicSpecch;
-   record * recordVoiceThread;
-   QString voiceToText;
+    specch *voicSpecch;
+    record * recordVoiceThread;
+    QString voiceToText;
 
     QProcess *m_process;
     QStringList ledArguments;
+
+    bool wifiLinkStatus;
+    QString linkWifiSSID;
 
 };
 

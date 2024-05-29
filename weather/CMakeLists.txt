@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project(MainProject VERSION 0.1 LANGUAGES CXX)
+project(Viches VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -74,6 +74,7 @@ else()
     endif()
 endif()
 
+target_include_directories(MainProject PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(MainProject PRIVATE Qt6::Widgets Qt6::Mqtt Qt6::Network Qt6::WebEngineWidgets)
 
 set_target_properties(MainProject PROPERTIES
