@@ -34,12 +34,10 @@ MainWidget::MainWidget(QWidget *parent)
 
     remoteWindow = new RemoteWindow(this);
 
-
-
 /******************************************************************/
     //timer
     mainTimer = new QTimer();
-    mainTimer->start(1000);
+    mainTimer->start(3000); // 3s
     connect(mainTimer,SIGNAL(timeout()),this,SLOT(timerTimeOut()));
 
     //mqtt initial
@@ -189,7 +187,7 @@ void MainWidget::initSysDevStatus()
     sysDevStatus.carOilLockStatus=OFF;
     sysDevStatus.carSpecificStatus=OFF;
     sysDevStatus.carTrunkLockStatus=OFF;
-//    sysDevStatus.carWinLockStatus=OFF;
+    // sysDevStatus.carWinLockStatus=OFF;
     sysDevStatus.wifiStatus=OFF;
     sysDevStatus.bluetoothStatus=OFF;
     sysDevStatus.TermperSwitchStatus=OFF;
@@ -478,11 +476,11 @@ void MainWidget::timerTimeOut()
     {
         currentLocationData->currentLat=QString::number(sysDevStatus.GPSLat,'f',7);
         currentLocationData->currentLon=QString::number(sysDevStatus.GPSLon,'f',7);
-        qDebug()<<"lon:"<< currentLocationData->currentLon<<"lat:"<<currentLocationData->currentLat;
+        // qDebug()<<"lon:"<< currentLocationData->currentLon<<"lat:"<<currentLocationData->currentLat;
 
         // acquireCurrentNetLocation(currentLocationData);
         sysDevStatus.GPSAddress=currentLocationData->formattedAddress;
-        qDebug()<<sysDevStatus.GPSAddress;
+        // qDebug()<<sysDevStatus.GPSAddress;
 
         test.batteryCapacity=87;
         test.vehInsideTemp=sysDevStatus.currentTermper;

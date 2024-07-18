@@ -22,6 +22,8 @@ wifiListWidget::wifiListWidget(QWidget *parent)
     QHBoxLayout *buttonLayout = new QHBoxLayout(ui->widgetButton);
     QGridLayout *keyLayout = new QGridLayout(ui->widgetKeyboard);
 
+
+
     //setting keyboard GridLayout
     const QStringList buttonLabels = {
         "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
@@ -29,6 +31,11 @@ wifiListWidget::wifiListWidget(QWidget *parent)
         "a", "s", "d", "f", "g", "h", "j", "k", "l","En",
         "Sh", "z", "x", "c", "v", "b", "n", "m", "De"," "
     };
+
+    // 键盘右侧占位符
+    QSpacerItem *spacer = new QSpacerItem(18, 30, QSizePolicy::Fixed, QSizePolicy::Fixed);
+    keyLayout->addItem(spacer, 0, buttonLabels.size());
+
     QString buttonStyle;
     buttonStyle= QString("QPushButton:pressed {background-color: rgb(255, 255, 255);}QPushButton {border-radius:5px;background-color: rgb(200, 200, 200);}");
 
@@ -37,7 +44,7 @@ wifiListWidget::wifiListWidget(QWidget *parent)
         keycap[i] = new QPushButton(buttonLabels.at(i), this);
 
         keycap[i]->setStyleSheet(buttonStyle);
-        QSize s(25,40);
+        QSize s(18,35);
         keycap[i]->setFixedSize(s);
         keyLayout->addWidget(keycap[i], i / 10, i % 10);
 
@@ -74,11 +81,11 @@ wifiListWidget::wifiListWidget(QWidget *parent)
     keyboardButton->setStyleSheet(buttonStyle);
     disconnectButton->setStyleSheet(buttonStyle);
 
-    QSize s1(25,25);
+    QSize s1(20,25);
     keyboardButton->setFixedSize(s1);
-    QSize s2(70,30);
+    QSize s2(55,30);
     connectButton->setFixedSize(s2);
-    QSize s3(70,30);
+    QSize s3(50,30);
     cancelButton->setFixedSize(s3);
 
     QSize s4(40,25);
@@ -117,28 +124,72 @@ wifiListWidget::~wifiListWidget()
     delete ui;
 }
 
+/************************ windows ***********************/
+// void wifiListWidget::refreshWiFiList()
+// {
+//     // Clear existing items
+//     ui->listWidgetWIFI->clear();
+
+//     // Use a system command to get the list of available WiFi networks
+//     QProcess process;
+//     process.start("netsh wlan show networks mode=Bssid");
+//     process.waitForFinished(-1);
+//     QString result = process.readAllStandardOutput();
+
+//     // Extract network names from the result
+//     QStringList networkNames = result.split("\n");
+//     for (const QString &name : networkNames) {
+//         if (name.trimmed().startsWith("SSID")) {
+//             QString networkName = name.split(":").last().trimmed();
+//             if (!networkName.isEmpty()) {
+//                 ui->listWidgetWIFI->addItem(networkName);
+//             }
+//         }
+//     }
+// }
+
+/************************  mac  ******************************/
 void wifiListWidget::refreshWiFiList()
 {
-    // Clear existing items
-    ui->listWidgetWIFI->clear();
+    // // Clear existing items
+    // ui->listWidgetWIFI->clear();
 
-    // Use a system command to get the list of available WiFi networks
-    QProcess process;
-    process.start("netsh wlan show networks mode=Bssid");
-    process.waitForFinished(-1);
-    QString result = process.readAllStandardOutput();
 
-    // Extract network names from the result
-    QStringList networkNames = result.split("\n");
-    for (const QString &name : networkNames) {
-        if (name.trimmed().startsWith("SSID")) {
-            QString networkName = name.split(":").last().trimmed();
-            if (!networkName.isEmpty()) {
-                ui->listWidgetWIFI->addItem(networkName);
-            }
-        }
-    }
+
+    // // Get the path to the Swift program
+    // QString swiftProgramPath = QString("/Users/areay7/WIFI_swift/AvailableWifiNetworkLister.swift");
+
+    // // qDebug() << swiftProgramPath;
+
+    // // Use a system command to run the Swift program and capture its output
+    // QProcess process;
+    // process.start("swift", QStringList() << swiftProgramPath);
+    // if (!process.waitForStarted()) {
+    //     return;
+    // }
+
+    // if (!process.waitForFinished(-1)) {
+    //     return;
+    // }
+
+    // QString result = process.readAllStandardOutput();
+
+    // // Extract network names from the result
+    // QStringList networkLines = result.split("\n", Qt::SkipEmptyParts);
+
+
+
+    // for (const QString &line : networkLines) {
+    //     qDebug() << "line:" << line;
+    //     QString networkName = line.trimmed();
+    //     if (!networkName.isEmpty()) {
+    //         qDebug() << "Adding network: " << networkName;
+    //         ui->listWidgetWIFI->addItem(networkName);
+    //     }
+    // }
 }
+
+
 
 void wifiListWidget::connectWifi()
 {

@@ -5,6 +5,7 @@
 devStatus miainDevIcon;
 devStatus sysDevStatus;
 
+
 ControlWidget::ControlWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ControlWidget)
@@ -13,7 +14,7 @@ ControlWidget::ControlWidget(QWidget *parent) :
     ui->setupUi(this);
     ui->label_28->setStyleSheet("color:#4aa2a7; border:none;");
 
-    setWindowFlag(Qt::FramelessWindowHint); // 设置窗口无边框
+    // setWindowFlag(Qt::FramelessWindowHint); // 设置窗口无边框
     setFixedSize(width(), height());
 
     /*****************************************************************/
@@ -48,7 +49,7 @@ ControlWidget::ControlWidget(QWidget *parent) :
 
     connect(mReturnAct, &QAction::triggered, this, [=]{
         // 返回到 MainWidget
-        qDebug() << "Return action triggered!";
+        // qDebug() << "Return action triggered!";
             returnToMainWidget();
 
     });
@@ -73,7 +74,7 @@ void ControlWidget::contextMenuEvent(QContextMenuEvent *event)
 
 void ControlWidget::returnToMainWidget()
 {
-    qDebug() << "Return to MainWidget!";
+    // qDebug() << "Return to MainWidget!";
     // 例如，显示主界面并隐藏当前界面
         hide();
     MainWidget *mainWidget = new MainWidget();
@@ -392,11 +393,9 @@ void ControlWidget::on_pushButtonSetWIFI_clicked()
         ui->stackedWidgetSetting->setCurrentIndex(1);
     }
     wifiSwStatusSeting(sysDevStatus.wifiStatus);
-    QWidget *currentWidget = ui->stackedWidgetSetting->currentWidget();
-    qDebug() << "Current widget index: " << ui->stackedWidgetSetting->currentIndex();
-    qDebug() << "Current widget: " << currentWidget;
 
 }
+/*==============wifi===============*/
 
 /*==============bluetooth===============*/
 void ControlWidget::bluetoothSwStatusSeting(devSwitchStatus switchStatus)
@@ -432,7 +431,7 @@ void ControlWidget::on_pushButtonSetBlue_clicked()
 
 void ControlWidget::voiceControl(QString Text)
 {
-    qDebug() << Text << "666";
+    // qDebug() << Text << "666";
        if (Text=="开灯。")
        {
 
@@ -493,7 +492,7 @@ void ControlWidget::on_pushButtonVoice_pressed()
     buttonStyle= QString(" QPushButton {border-radius: 21px;border-image: url(:/image/recordVoiceBackPress.png);background: rgba(0,0,0,0%);}");
     ui->pushButtonVoice->setStyleSheet(buttonStyle);
     // ui->stackedWidgetSetting->setCurrentIndex(0);
-    qDebug()<<"Start record";
+    // qDebug()<<"Start record";
     emit recordVoiceThread->recordCorlRunFlagSignal(1);
     recordVoiceThread->start();
 }
@@ -505,11 +504,11 @@ void ControlWidget::on_pushButtonVoice_released()
     buttonStyle= QString(" QPushButton {border-radius: 21px;border-image: url(:/image/recordVoiceBackRelace.png);background: rgba(0,0,0,0%);}");
     ui->pushButtonVoice->setStyleSheet(buttonStyle);
     emit recordVoiceThread->recordCorlRunFlagSignal(0);
-    qDebug()<<"Stop record";
+    // qDebug()<<"Stop record";
     QString resultText;
     resultText=voicSpecch->speechIdentify(":/wav/receiv.wav");
     // resultText=voicSpecch->speechIdentify(":/wav/qichaung.wav");
-    qDebug()<<"reslut:"<<resultText;
+    // qDebug()<<"reslut:"<<resultText;
     voiceToText="你好";
     voiceControl(resultText);
 

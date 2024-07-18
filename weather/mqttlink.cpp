@@ -74,7 +74,7 @@ void mqttLink::mqttPublishTopic(QString topicName, mqttDevStatus &devStatus)
 
     QJsonDocument doc(data);
     QByteArray jsonData = doc.toJson();
-    qDebug() << jsonData;
+    // qDebug() << jsonData;
 
     myClient->publish(topicName, jsonData);
 }

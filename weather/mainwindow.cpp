@@ -487,3 +487,4 @@ void MainWindow::on_btnSearch_clicked()
     getWeatherInfo(cityName);
 }
 
+

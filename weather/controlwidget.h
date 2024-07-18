@@ -1,3 +1,16 @@
+
+/****************************************************************
+*   @project         Viches                                     *
+*   @file            controlwidget.h                            *
+*   @brief           Abstract                                   *
+*   @author          Areay7                                     *
+*   @emial           2507549477@qq.com                          *
+*   @blog            www.myblog.areay7.cn                       *
+*   @date            2024-07-01                                 *
+*   @Copyright:      Copyright (c) 2024 MQ. All rights reserved.*
+*****************************************************************/
+
+
 #ifndef CONTROLWIDGET_H
 #define CONTROLWIDGET_H
 

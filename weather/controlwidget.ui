@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>999</width>
-    <height>542</height>
+    <width>1001</width>
+    <height>562</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,7 +26,7 @@ background-color: rgb(234, 243, 244);
      <x>0</x>
      <y>-10</y>
      <width>1001</width>
-     <height>551</height>
+     <height>571</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -813,14 +813,14 @@ background: rgba(0,0,0,0%);</string>
       <x>740</x>
       <y>10</y>
       <width>241</width>
-      <height>471</height>
+      <height>491</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">border-radius: 30px; </string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="pageVoice">
      <widget class="QLabel" name="label_27">
@@ -1001,7 +1001,7 @@ background-color: rgb(73, 92, 105);
     <property name="geometry">
      <rect>
       <x>750</x>
-      <y>490</y>
+      <y>500</y>
       <width>221</width>
       <height>61</height>
      </rect>
