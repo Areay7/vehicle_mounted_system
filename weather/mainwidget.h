@@ -5,6 +5,7 @@
 #include <QWidget>
 #include "mainwindow.h"
 #include "./remote/remotecontrol.h"
+#include "./remote/remoteview.h"
 
 #include <QTimer>
 //#include <QMediaPlayer>
@@ -12,6 +13,9 @@
 #include "http.h"
 #include "controlwidget.h"
 #include "mqttlink.h"
+#include "battery.h"
+
+
 //#include "gps.h"
 //#include "texttovoice.h"
 //#include "netweather.h"
@@ -108,6 +112,7 @@ private:
     Ui::MainWidget *ui;
     MainWindow *mainWindow;
     RemoteWindow *remoteWindow;
+    RemoteView *remoteViewWindow;
 
 private:
     QTimer *mainTimer;
@@ -117,6 +122,9 @@ private:
 //    QMediaPlayer *player;
 //    Netweather mainCardWeather;
     mqttLink *netMqttMsg;
+
+private:
+    Battery *battery;
 };
 
 #endif // MAINWIDGET_H

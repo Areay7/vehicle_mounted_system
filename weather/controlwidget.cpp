@@ -344,9 +344,9 @@ void ControlWidget::on_pushButtonSetHumSub_released()
 
 void ControlWidget::timerTimeOut()
 {
-    ledStatusSeting(sysDevStatus.ledStatus);
-    wifiSwStatusSeting(sysDevStatus.wifiStatus);
-    bluetoothSwStatusSeting(sysDevStatus.bluetoothStatus);
+    // ledStatusSeting(sysDevStatus.ledStatus);
+    // wifiSwStatusSeting(sysDevStatus.wifiStatus);
+    // bluetoothSwStatusSeting(sysDevStatus.bluetoothStatus);
     if(sysDevStatus.HumSwitchStatus==ON)
     {
         ui->labSetHumidity->setText(QString::number(sysDevStatus.currentSetHumidity)+"%");

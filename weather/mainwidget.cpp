@@ -34,6 +34,11 @@ MainWidget::MainWidget(QWidget *parent)
 
     remoteWindow = new RemoteWindow(this);
 
+    remoteViewWindow = new RemoteView(this);
+
+    battery = new Battery(this);
+    ui->verticalLayout_Battery->addWidget(battery);
+
 /******************************************************************/
     //timer
     mainTimer = new QTimer();
@@ -75,7 +80,7 @@ void MainWidget::on_btnOpenSituationWindow_clicked()
     // 显示 CurrentSituation 窗口
     // situationWindow->show();
 
-    RemoteViewWindow *remoteViewWindow = new RemoteViewWindow();
+    // RemoteView *remoteViewWindow = new RemoteView();
     remoteViewWindow->show();
     hide(); // 隐藏当前窗口
 }
@@ -464,7 +469,7 @@ void MainWidget::timerTimeOut()
         netMqttMsg->mqttReceFlag=false;
     }
     // 刷新状态
-    setDevIcon(sysDevStatus.wifiStatus,sysDevStatus.bluetoothStatus);
+    // setDevIcon(sysDevStatus.wifiStatus,sysDevStatus.bluetoothStatus);
     catDoorLockStatusSeting(sysDevStatus.doorStatus);
 //    carWinLockStatusSeting(sysDevStatus.carWinLockStatus);
     catTrunkLockStatusSeting(sysDevStatus.carTrunkLockStatus);

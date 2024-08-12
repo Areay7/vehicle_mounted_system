@@ -1,9 +1,0 @@
--rootPath
-/Users/areay7/QtCode/Qt_learn/cmake_test/weather
--cmake-output
--output-file
-/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_MainProject.cmake
--importPath
-/Users/areay7/QtCode/Qt_learn/cmake_test/build-weather-Qt_6_5_3_for_macOS-Debug
--importPath
-/Users/areay7/Qt/6.5.3/macos/./qml

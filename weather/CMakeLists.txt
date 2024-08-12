@@ -24,50 +24,43 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Find required Qt components including WebEngineWidgets
 find_package(Qt6 COMPONENTS Widgets Mqtt Network WebEngineWidgets REQUIRED)
+find_package(Qt6 REQUIRED COMPONENTS Multimedia)
 
 file(GLOB_RECURSE HEAD_FILE ${CMAKE_CURRENT_SOURCE_DIR}/*.h)
 file(GLOB_RECURSE CPP_FILE ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 file(GLOB_RECURSE UI_FILE ${CMAKE_CURRENT_SOURCE_DIR}/*.ui)
 file(GLOB_RECURSE SROUCE_FILE ${CMAKE_CURRENT_SOURCE_DIR}/*.qrc)
 
+INCLUDE_DIRECTORIES(
+    ${PROJECT_SOURCE_DIR}
+)
+
 set(PROJECT_SOURCES ${HEAD_FILE} ${CPP_FILE} ${UI_FILE} ${SROUCE_FILE})
 
 
 if(Qt6_FOUND)
-    qt_add_executable(MainProject
+    qt_add_executable(Viches
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        # musicwidget.ui musicwindow.cpp musicwindow.h musicwindow.o musicwindow.ui
+        # battery.ui
+        # battery.h battery.cpp
     )
 else()
     if(ANDROID)
-        add_library(MainProject SHARED
+        add_library(Viches SHARED
             ${PROJECT_SOURCES}
         )
     else()
-        add_executable(MainProject
+        add_executable(Viches
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
-target_include_directories(MainProject PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
-target_link_libraries(MainProject PRIVATE Qt6::Widgets Qt6::Mqtt Qt6::Network Qt6::WebEngineWidgets)
+target_include_directories(Viches PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(Viches PRIVATE Qt6::Widgets Qt6::Mqtt Qt6::Network Qt6::Multimedia Qt6::WebEngineWidgets)
 
-# set_target_properties(MainProject PROPERTIES
-#     MACOSX_BUNDLE TRUE
-#     WIN32_EXECUTABLE TRUE
-#     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
-#     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
-#     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
-# )
-
-# install(TARGETS MainProject
-#     BUNDLE DESTINATION .
-#     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-# )
-
-# if(Qt6_FOUND)
-#     qt_finalize_executable(MainProject)
-# endif()
 
 add_definitions(-DPRO_FILE_PWD="${CMAKE_SOURCE_DIR}")
+# add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)

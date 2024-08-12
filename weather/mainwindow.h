@@ -50,14 +50,14 @@ protected:
     void mousePressEvent(QMouseEvent *event);
     void mouseMoveEvent(QMouseEvent *event);
 
+    // 重写父类的eventfilter方法
+    bool eventFilter(QObject* watched, QEvent* event);
+
     // 获取天气数据、解析Json、更新UI
     void getWeatherInfo(QString cityCode);
 
     void parseJson(QByteArray &byteArray);
     void updateUI();
-
-    // 重写父类的eventfilter方法
-    bool eventFilter(QObject* watched, QEvent* event);
 
     // 绘制高低温曲线
     void paintHighCurve();

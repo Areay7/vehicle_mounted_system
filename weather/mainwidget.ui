@@ -97,6 +97,27 @@ image: url(:/mainImage/Signal.png);</string>
      <string/>
     </property>
    </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>-5</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_Battery"/>
+    </widget>
+   </widget>
   </widget>
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
@@ -134,7 +155,7 @@ background-color: rgb(234, 243, 244);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
- QPushButton:pressed {
+ QPushButton:hover {
 	border-image: url(:/mainImage/mainControlPress.png);
  }
  QPushButton {
@@ -156,7 +177,7 @@ background-color: rgb(234, 243, 244);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
- QPushButton:pressed {
+ QPushButton:hover {
 	border-image: url(:/mainImage/mainControlPress.png);
  }
  QPushButton {
@@ -178,7 +199,7 @@ background-color: rgb(234, 243, 244);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
- QPushButton:pressed {
+ QPushButton:hover {
  
 	border-image: url(:/mainImage/mainWeatherpress.png);
  }
@@ -202,7 +223,7 @@ background-color: rgb(234, 243, 244);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
- QPushButton:pressed {
+ QPushButton:hover {
 	border-image: url(:/mainImage/mainRecordPress.png);
  }
  QPushButton {
@@ -224,7 +245,7 @@ background-color: rgb(234, 243, 244);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
- QPushButton:pressed {
+ QPushButton:hover {
 	border-image: url(:/mainImage/mainMusicPress.png);
  }
  QPushButton {
@@ -259,7 +280,7 @@ background-color: rgb(234, 243, 244);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
- QPushButton:pressed {
+ QPushButton:hover {
  
 	border-image: url(:/mainImage/mainWeatherpress.png);
  }
@@ -1159,7 +1180,7 @@ border-image: url(:/mainImage/main7.png);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
- QPushButton:pressed {
+ QPushButton:hover {
 	border-image: url(:/mainImage/mainMusicPress.png);
  }
  QPushButton {

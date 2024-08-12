@@ -8,5 +8,10 @@
         <file>remoteRes/zuo.png</file>
         <file>remoteRes/stop.png</file>
         <file>remoteRes/true.png</file>
+        <file>remoteRes/close.png</file>
+        <file>remoteRes/home_common.png</file>
+        <file>remoteRes/home_select.png</file>
+        <file>remoteRes/return_common.png</file>
+        <file>remoteRes/return_select.png</file>
     </qresource>
 </RCC>

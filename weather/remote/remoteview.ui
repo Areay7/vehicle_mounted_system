@@ -1,24 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>RemoteViewWindow</class>
- <widget class="QMainWindow" name="RemoteViewWindow">
+ <class>RemoteView</class>
+ <widget class="QDialog" name="RemoteView">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1254</width>
-    <height>628</height>
+    <width>1215</width>
+    <height>647</height>
    </rect>
   </property>
-  <property name="font">
-   <font>
-    <family>.AppleSystemUIFont</family>
-   </font>
-  </property>
   <property name="windowTitle">
-   <string>树莓派远程监控</string>
+   <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="3">
+    <widget class="QTextBrowser" name="textbrowser_response">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>2</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="openLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="btn_request">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>60</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>20</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-image: url(:/remoteRes/home_select.png);
+background-color: rgba(0,0,0,0);
+border: none;
+}
+
+QPushButton:hover{
+border-image: url(:/remoteRes/home_common.png);
+background-color: rgba(0,0,0,0);
+border: none;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QPlainTextEdit" name="plaintextedit_response">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>3</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="btn_return">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>20</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-image: url(:/remoteRes/return_select.png);
+background-color: rgba(0,0,0,0);
+border: none;
+}
+
+QPushButton:hover{
+border-image: url(:/remoteRes/return_common.png);
+background-color: rgba(0,0,0,0);
+border: none;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>22</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string> Tip :  Ringht Click to View  or Downloads</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

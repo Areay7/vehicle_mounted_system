@@ -23,6 +23,7 @@
 #include "record.h"
 #include "specch.h"
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class ControlWidget;
@@ -150,7 +151,6 @@ private:
 
     bool wifiLinkStatus;
     QString linkWifiSSID;
-
 };
 
 #endif // CONTROLWIDGET_H
