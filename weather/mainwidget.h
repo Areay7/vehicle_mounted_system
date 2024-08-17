@@ -6,6 +6,7 @@
 #include "mainwindow.h"
 #include "./remote/remotecontrol.h"
 #include "./remote/remoteview.h"
+#include "./opencvServer/opencvWindow.h"
 
 #include <QTimer>
 //#include <QMediaPlayer>
@@ -108,11 +109,14 @@ private slots:
 
     void on_btnOpenRemoteWindow_clicked();
 
+    void on_pushButtonEnterMap_clicked();
+
 private:
     Ui::MainWidget *ui;
     MainWindow *mainWindow;
     RemoteWindow *remoteWindow;
     RemoteView *remoteViewWindow;
+    OpencvWindow *opencvWindow;
 
 private:
     QTimer *mainTimer;

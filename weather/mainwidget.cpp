@@ -7,9 +7,9 @@
 #include <QProcess>
 #include <QUrl>
 
-#include "./remote/remotecontrol.h"
-#include "./remote/remoteview.h"
-
+// #include "./remote/remotecontrol.h"
+// #include "./remote/remoteview.h"
+// #include "./opencvServer/opencvWindow.h"
 
 extern devStatus mainDevIcon;
 extern devStatus sysDevStatus;
@@ -35,6 +35,8 @@ MainWidget::MainWidget(QWidget *parent)
     remoteWindow = new RemoteWindow(this);
 
     remoteViewWindow = new RemoteView(this);
+
+    opencvWindow = new OpencvWindow(this);
 
     battery = new Battery(this);
     ui->verticalLayout_Battery->addWidget(battery);
@@ -520,6 +522,14 @@ void MainWidget::timerTimeOut()
 void MainWidget::on_btnOpenRemoteWindow_clicked()
 {
     remoteWindow->show();
+
+    hide();
+}
+
+
+void MainWidget::on_pushButtonEnterMap_clicked()
+{
+    opencvWindow->show();
 
     hide();
 }

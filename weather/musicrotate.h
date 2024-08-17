@@ -1,26 +1,26 @@
-﻿#ifndef MUSICROTATE_H
-#define MUSICROTATE_H
+﻿// #ifndef MUSICROTATE_H
+// #define MUSICROTATE_H
 
-#include <QWidget>
+// #include <QWidget>
 
-namespace Ui {
-class musicrotate;
-}
+// namespace Ui {
+// class musicrotate;
+// }
 
-class musicrotate : public QWidget
-{
-    Q_OBJECT
-    void paintEvent(QPaintEvent *) override;
-public:
-    explicit musicrotate(QWidget *parent = nullptr);
-    ~musicrotate();
-private slots:
-    void timerTimeOut();
+// class musicrotate : public QWidget
+// {
+//     Q_OBJECT
+//     void paintEvent(QPaintEvent *) override;
+// public:
+//     explicit musicrotate(QWidget *parent = nullptr);
+//     ~musicrotate();
+// private slots:
+//     void timerTimeOut();
 
-private:
-    Ui::musicrotate *ui;
-    QPixmap disc;
-    QTimer* timer;
-};
+// private:
+//     Ui::musicrotate *ui;
+//     QPixmap disc;
+//     QTimer* timer;
+// };
 
-#endif // MUSICROTATE_H
+// #endif // MUSICROTATE_H
